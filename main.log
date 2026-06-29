@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  29 JUN 2026 15:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  29 JUN 2026 15:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1578,28 +1578,27 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
 File: figs/workflow.png Graphic file (type bmp)
 <figs/workflow.png>
 
-
-Class acmart Warning: A possible image without description on input line 8.
-
-
-Overfull \hbox (10.0845pt too wide) in paragraph at lines 14--15
+Overfull \hbox (10.0845pt too wide) in paragraph at lines 15--16
 \TU/LinLibertine(0)/m/n/9 level defense observations into interpretable defense capability scores.
  []
 
 
+Underfull \vbox (badness 3907) has occurred while \output is active []
 
 
-Overfull \hbox (5.89798pt too wide) in paragraph at lines 33--34
+
+
+Overfull \hbox (5.89798pt too wide) in paragraph at lines 34--35
 \TU/LinLibertine(0)/m/n/9 trol failures. Defensive lifecycle phase separates prevention-oriented
  []
 
 
-Overfull \hbox (3.27452pt too wide) in paragraph at lines 33--34
+Overfull \hbox (3.27452pt too wide) in paragraph at lines 34--35
 \TU/LinLibertine(0)/m/n/9 source captures weaknesses introduced through externally supplied
  []
 
 
-Overfull \hbox (5.11882pt too wide) in paragraph at lines 33--34
+Overfull \hbox (5.11882pt too wide) in paragraph at lines 34--35
 \TU/LinLibertine(0)/m/n/9 inputs, such as phishing messages, malicious documents, third-party
  []
 
@@ -1609,11 +1608,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 35.
+(Font)              scaled to size 9.0pt on input line 36.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 36.
 [2.2]
-Underfull \hbox (badness 3579) in paragraph at lines 46--47
+Underfull \hbox (badness 3579) in paragraph at lines 47--48
 []|\TU/LinLibertine(0)/m/n/9 Authorization, isolation, and boundary-control
  []
 
@@ -1623,84 +1622,84 @@ Underfull \vbox (badness 1394) has occurred while \output is active []
 
 
 
-Overfull \hbox (4.76778pt too wide) in paragraph at lines 60--61
+Overfull \hbox (4.76778pt too wide) in paragraph at lines 61--62
 \TU/LinLibertine(0)/m/n/9 splits. These tags help explain attack chains, but they are not counted
  []
 
 
-Overfull \hbox (7.97554pt too wide) in paragraph at lines 62--63
+Overfull \hbox (7.97554pt too wide) in paragraph at lines 63--64
 \TU/LinLibertine(0)/m/n/9 methodology: canonical phase assignment, defense opportunity map-
  []
 
 
-Overfull \hbox (21.583pt too wide) in paragraph at lines 76--77
-[]\TU/LinLibertine(0)/m/n/9 The benchmark construction process has three components. First,each
+Overfull \hbox (3.76299pt too wide) in paragraph at lines 77--78
+[]\TU/LinLibertine(0)/m/n/9 The benchmark construction process has three components. First,
  []
 
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 79.
+(Font)              scaled to size 9.0pt on input line 80.
 
-Overfull \hbox (9.11752pt too wide) in paragraph at lines 79--80
+Overfull \hbox (9.11752pt too wide) in paragraph at lines 80--81
  \TU/LinBiolinum(0)/m/it/9 2.3.1 Canonical Phase Assignment.[] \TU/LinLibertine(0)/m/n/9 The attribution domains describe
  []
 
 
 
 [3.3]
-Overfull \hbox (2.20554pt too wide) in paragraph at lines 86--87
+Overfull \hbox (2.20554pt too wide) in paragraph at lines 87--88
  \TU/LinBiolinum(0)/m/it/9 2.3.2 Defense-Category Mapping.[] \TU/LinLibertine(0)/m/n/9 The primary weakness leaf iden-
  []
 
 
-Overfull \hbox (10.53754pt too wide) in paragraph at lines 90--91
+Overfull \hbox (10.53754pt too wide) in paragraph at lines 91--92
 \TU/LinLibertine(0)/m/n/9 may be primarily related to network access control or next-generation
  []
 
 
-Overfull \hbox (3.5618pt too wide) in paragraph at lines 93--94
+Overfull \hbox (3.5618pt too wide) in paragraph at lines 94--95
 \TU/LinLibertine(0)/m/n/9 top-level domain, canonical phase, expected defense categories, con-
  []
 
 
 
 
-Overfull \hbox (2.27179pt too wide) in paragraph at lines 98--99
+Overfull \hbox (2.27179pt too wide) in paragraph at lines 99--100
 \TU/LinLibertine(0)/m/n/9 scoring. For example, a stage may represent alternative attack paths,
  []
 
 
-Overfull \hbox (11.24704pt too wide) in paragraph at lines 116--116
+Overfull \hbox (11.24704pt too wide) in paragraph at lines 117--117
 []|\TU/LinLibertine(0)/m/n/9 compensating_defense| 
  []
 
 
-Overfull \hbox (2.52379pt too wide) in paragraph at lines 130--131
+Overfull \hbox (2.52379pt too wide) in paragraph at lines 131--132
 \TU/LinLibertine(0)/m/n/9 level records. Each record contains the playbook identifier, the stage
  []
 
 
 
 [4.4]
-Overfull \hbox (1.06346pt too wide) in paragraph at lines 140--150
+Overfull \hbox (1.06346pt too wide) in paragraph at lines 141--151
  [][] 
  []
 
 
-Overfull \hbox (5.21027pt too wide) in paragraph at lines 162--163
+Overfull \hbox (5.21027pt too wide) in paragraph at lines 163--164
 \TU/LinLibertine(0)/m/n/9 After defense result alignment, each benchmark action has an action-
  []
 
 
-Overfull \hbox (2.00029pt too wide) in paragraph at lines 162--163
+Overfull \hbox (2.00029pt too wide) in paragraph at lines 163--164
 \TU/LinLibertine(0)/m/n/9 level hit value and a set of benchmark metadata, including its canon-
  []
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 166.
+(Font)              scaled to size 9.0pt on input line 167.
 LaTeX Font Info:    Font shape `TU/LinLibertine(1)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 166.
+(Font)              scaled to size 7.2pt on input line 167.
 LaTeX Font Info:    Font shape `TU/LinLibertine(1)/m/n' will be
-(Font)              scaled to size 5.4pt on input line 166.
+(Font)              scaled to size 5.4pt on input line 167.
 
 
 
@@ -1708,18 +1707,13 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(1)/m/n' will be
 [5.5]
 
 
-Overfull \hbox (11.94003pt too wide) in paragraph at lines 243--244
+Overfull \hbox (11.94003pt too wide) in paragraph at lines 244--245
 \TU/LinLibertine(1)/m/n/9 mark construction process, result alignment procedure, scoring model,
  []
 
 
-Overfull \hbox (3.16124pt too wide) in paragraph at lines 253--254
+Overfull \hbox (3.16124pt too wide) in paragraph at lines 254--255
 []|\TU/LinLibertine(1)/m/n/9 Interpretation| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-[]|\TU/LinLibertine(1)/m/n/9 Almost per-
  []
 
 
@@ -1733,49 +1727,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
  []
 
 
-Overfull \hbox (20.70404pt too wide) in paragraph at lines 251--263
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+[]|\TU/LinLibertine(1)/m/n/9 Almost per-
+ []
+
+
+Overfull \hbox (20.70404pt too wide) in paragraph at lines 252--264
  [][] 
  []
 
 
 
 [6.6]
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []|\TU/LinLibertine(1)/m/n/9 External agreement with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
+Underfull \hbox (badness 10000) in paragraph at lines 279--279
 []|\TU/LinLibertine(1)/m/n/9 Highest category agree-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--279
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 []|\TU/LinLibertine(1)/m/n/9 Endpoint-category agree-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
 []|\TU/LinLibertine(1)/m/n/9 Primary defense internal
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 281--281
+Underfull \hbox (badness 2707) in paragraph at lines 282--282
 []|\TU/LinLibertine(1)/m/n/9 Compensating defense in-
  []
 
 
-Overfull \hbox (5.70378pt too wide) in paragraph at lines 288--289
+Overfull \hbox (5.70378pt too wide) in paragraph at lines 289--290
 \TU/LinLibertine(1)/m/n/9 experiments; they are boundary and coverage simulations. A perfect-
  []
 
 
-Overfull \hbox (5.88376pt too wide) in paragraph at lines 294--304
+Overfull \hbox (5.88376pt too wide) in paragraph at lines 295--305
  [][] 
  []
 
 
-Overfull \hbox (11.78699pt too wide) in paragraph at lines 308--309
+Overfull \hbox (11.78699pt too wide) in paragraph at lines 309--310
 \TU/LinLibertine(1)/m/n/9 sonable parameter and aggregation variations. We vary phase weights,
  []
 
@@ -1870,16 +1869,16 @@ Overfull \hbox (14.78027pt too wide) in paragraph at lines 36--37
 
 )
 
-Class acmart Warning: Some images may lack descriptions.
-
-
 Class acmart Warning: \vspace should only be used to provide space above/below surrounding objects on input line 189.
 
 
 
 
 
-(d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+
+Overfull \vbox (1.792pt too high) has occurred while \output is active []
+
+ (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
@@ -1889,15 +1888,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5DD0FAFC67219AF786251E652C36D697;2895.
+(rerunfilecheck)             Checksum: 7D543A37369C059F86A786D39C5FD91D;2400.
  ) 
 Here is how much of TeX's memory you used:
- 33269 strings out of 473832
- 643217 string characters out of 5733157
- 1201972 words of memory out of 5000000
- 55737 multiletter control sequences out of 15000+600000
+ 33268 strings out of 473832
+ 643207 string characters out of 5733157
+ 1199608 words of memory out of 5000000
+ 55736 multiletter control sequences out of 15000+600000
  566670 words of font info for 140 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,17n,131p,1387b,32962s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,17n,131p,1387b,32960s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (9 pages).
