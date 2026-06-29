@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: cition.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--empty address in frigault2008dynamic
+Warning--empty publisher in kaloroumakis2021d3fend
+Warning--empty address in kaloroumakis2021d3fend
+Warning--page numbers missing in both pages and numpages fields in kaloroumakis2021d3fend
+Warning--empty address in ou2006scalable
+Warning--empty address in ou2005mulval
+Warning--page numbers missing in both pages and numpages fields in ou2005mulval
+Warning--empty address in wang2008probabilistic
+Warning--empty address in wang2007measuring
+You've used 15 entries,
+            6056 wiz_defined-function locations,
+            1576 strings with 20810 characters,
+and the built_in function-call counts, 14616 in all, are:
+= -- 1719
+> -- 413
+< -- 0
++ -- 128
+- -- 143
+* -- 966
+:= -- 1427
+add.period$ -- 81
+call.type$ -- 15
+change.case$ -- 96
+chr.to.int$ -- 14
+cite$ -- 24
+duplicate$ -- 1382
+empty$ -- 971
+format.name$ -- 175
+if$ -- 3428
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 38
+newline$ -- 181
+num.names$ -- 104
+pop$ -- 518
+preamble$ -- 1
+purify$ -- 214
+quote$ -- 0
+skip$ -- 530
+stack$ -- 0
+substring$ -- 1067
+swap$ -- 117
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 416
+warning$ -- 9
+while$ -- 92
+width$ -- 0
+write$ -- 343
+(There were 9 warnings)

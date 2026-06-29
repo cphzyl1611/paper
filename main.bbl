@@ -1,0 +1,181 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{15}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Erola et~al\mbox{.}(2022)]%
+        {erola2022system}
+\bibfield{author}{\bibinfo{person}{Arnau Erola}, \bibinfo{person}{Ioannis Agrafiotis}, \bibinfo{person}{Jason R.~C. Nurse}, \bibinfo{person}{Louise Axon}, \bibinfo{person}{Michael Goldsmith}, {and} \bibinfo{person}{Sadie Creese}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{A System to Calculate Cyber Value-at-Risk}}.
+\newblock \bibinfo{journal}{\emph{Computers \& Security}}  \bibinfo{volume}{113} (\bibinfo{year}{2022}), \bibinfo{pages}{102545}.
+\newblock
+\href{https://doi.org/10.1016/j.cose.2021.102545}{doi:\nolinkurl{10.1016/j.cose.2021.102545}}
+
+
+\bibitem[{FIRST}(2019)]%
+        {first2019cvss31}
+\bibfield{author}{\bibinfo{person}{{FIRST}}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{{Common Vulnerability Scoring System Version 3.1: Specification Document}}.
+\newblock \bibinfo{howpublished}{\url{https://www.first.org/cvss/v3.1/specification-document}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[Frigault et~al\mbox{.}(2008)]%
+        {frigault2008dynamic}
+\bibfield{author}{\bibinfo{person}{Marc Frigault}, \bibinfo{person}{Lingyu Wang}, \bibinfo{person}{Anoop Singhal}, {and} \bibinfo{person}{Sushil Jajodia}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{Measuring Network Security Using Dynamic Bayesian Network}}. In \bibinfo{booktitle}{\emph{Proceedings of the 4th ACM Workshop on Quality of Protection}}. \bibinfo{publisher}{ACM}, \bibinfo{pages}{23--30}.
+\newblock
+\href{https://doi.org/10.1145/1456362.1456368}{doi:\nolinkurl{10.1145/1456362.1456368}}
+
+
+\bibitem[{Google Cloud Mandiant}(2026)]%
+        {mandiant2026mtrends}
+\bibfield{author}{\bibinfo{person}{{Google Cloud Mandiant}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{M-Trends 2026: Data, Insights, and Strategies From Mandiant Frontline Investigations}}.
+\newblock \bibinfo{howpublished}{\url{https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2026}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[{IBM Security}(2024)]%
+        {ibm2024costdatabreach}
+\bibfield{author}{\bibinfo{person}{{IBM Security}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{{Cost of a Data Breach Report 2024}}.
+\newblock \bibinfo{howpublished}{\url{https://www.ibm.com/think/insights/whats-new-2024-cost-of-a-data-breach-report}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[Kaloroumakis and Smith(2021)]%
+        {kaloroumakis2021d3fend}
+\bibfield{author}{\bibinfo{person}{Peter~E. Kaloroumakis} {and} \bibinfo{person}{Michael~J. Smith}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{{Toward a Knowledge Graph of Cybersecurity Countermeasures}}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 Workshop on Cyber Security Experimentation and Test (CSET)}}.
+\newblock
+\urldef\tempurl%
+\url{https://d3fend.mitre.org/resources/D3FEND.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Mell et~al\mbox{.}(2006)]%
+        {mell2007common}
+\bibfield{author}{\bibinfo{person}{Peter Mell}, \bibinfo{person}{Karen Scarfone}, {and} \bibinfo{person}{Sasha Romanosky}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{Common Vulnerability Scoring System}}.
+\newblock \bibinfo{journal}{\emph{IEEE Security \& Privacy}} \bibinfo{volume}{4}, \bibinfo{number}{6} (\bibinfo{year}{2006}), \bibinfo{pages}{85--89}.
+\newblock
+\href{https://doi.org/10.1109/MSP.2006.145}{doi:\nolinkurl{10.1109/MSP.2006.145}}
+
+
+\bibitem[{MITRE}(2026a)]%
+        {mitreAttack}
+\bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{{MITRE ATT\&CK}}.
+\newblock \bibinfo{howpublished}{\url{https://attack.mitre.org/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[{MITRE}(2026b)]%
+        {mitreD3FEND}
+\bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{{MITRE D3FEND: A Knowledge Graph of Cybersecurity Countermeasures}}.
+\newblock \bibinfo{howpublished}{\url{https://d3fend.mitre.org/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[{MITRE Engenuity}(2026)]%
+        {mitreAttackEvaluations}
+\bibfield{author}{\bibinfo{person}{{MITRE Engenuity}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{ATT\&CK Evaluations: Methodology Overview}}.
+\newblock \bibinfo{howpublished}{\url{https://evals.mitre.org/methodology-overview/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[Ou et~al\mbox{.}(2006)]%
+        {ou2006scalable}
+\bibfield{author}{\bibinfo{person}{Xinming Ou}, \bibinfo{person}{Wayne~F. Boyer}, {and} \bibinfo{person}{Miles~A. McQueen}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{{A Scalable Approach to Attack Graph Generation}}. In \bibinfo{booktitle}{\emph{Proceedings of the 13th ACM Conference on Computer and Communications Security}}. \bibinfo{publisher}{ACM}, \bibinfo{pages}{336--345}.
+\newblock
+\href{https://doi.org/10.1145/1180405.1180446}{doi:\nolinkurl{10.1145/1180405.1180446}}
+
+
+\bibitem[Ou et~al\mbox{.}(2005)]%
+        {ou2005mulval}
+\bibfield{author}{\bibinfo{person}{Xinming Ou}, \bibinfo{person}{Sudhakar Govindavajhala}, {and} \bibinfo{person}{Andrew~W. Appel}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{{MulVAL: A Logic-based Network Security Analyzer}}. In \bibinfo{booktitle}{\emph{Proceedings of the 14th USENIX Security Symposium}}. \bibinfo{publisher}{USENIX Association}.
+\newblock
+\urldef\tempurl%
+\url{https://www.usenix.org/conference/14th-usenix-security-symposium/mulval-logic-based-network-security-analyzer}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Verizon Business}(2025)]%
+        {verizon2025dbir}
+\bibfield{author}{\bibinfo{person}{{Verizon Business}}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{{2025 Data Breach Investigations Report}}.
+\newblock \bibinfo{howpublished}{\url{https://www.verizon.com/business/resources/reports/2025-dbir-data-breach-investigations-report.pdf}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[Wang et~al\mbox{.}(2008)]%
+        {wang2008probabilistic}
+\bibfield{author}{\bibinfo{person}{Lingyu Wang}, \bibinfo{person}{Tania Islam}, \bibinfo{person}{Tao Long}, \bibinfo{person}{Anoop Singhal}, {and} \bibinfo{person}{Sushil Jajodia}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{{An Attack Graph-Based Probabilistic Security Metric}}. In \bibinfo{booktitle}{\emph{Data and Applications Security XXII}} \emph{(\bibinfo{series}{Lecture Notes in Computer Science}, Vol.~\bibinfo{volume}{5094})}. \bibinfo{publisher}{Springer}, \bibinfo{pages}{283--296}.
+\newblock
+\href{https://doi.org/10.1007/978-3-540-70567-3_22}{doi:\nolinkurl{10.1007/978-3-540-70567-3_22}}
+
+
+\bibitem[Wang et~al\mbox{.}(2007)]%
+        {wang2007measuring}
+\bibfield{author}{\bibinfo{person}{Lingyu Wang}, \bibinfo{person}{Anoop Singhal}, {and} \bibinfo{person}{Sushil Jajodia}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{{Measuring the Overall Security of Network Configurations Using Attack Graphs}}. In \bibinfo{booktitle}{\emph{Data and Applications Security XXI}} \emph{(\bibinfo{series}{Lecture Notes in Computer Science}, Vol.~\bibinfo{volume}{4602})}. \bibinfo{publisher}{Springer}, \bibinfo{pages}{98--112}.
+\newblock
+\href{https://doi.org/10.1007/978-3-540-73538-0_9}{doi:\nolinkurl{10.1007/978-3-540-73538-0_9}}
+
+
+\end{thebibliography}
