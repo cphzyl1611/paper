@@ -64,7 +64,7 @@ After this step, raw attack actions have been converted into repair-oriented con
 \subsection{Benchmark Construction}
 \label{subsec:benchmark-construction}
 
-Control-point attribution explains which defense failed, but it is not enough for scoring by itself. The scoring engine also needs to know when the action occurs in the attack chain, which defense product categories are expected to address it, and how the action should be aggregated with other actions in the same stage. Benchmark construction adds this information without changing the primary attribution result.
+Control-point attribution identifies which victim-side control point failed, but it is not enough for scoring by itself. The scoring engine also needs to know when the action occurs in the attack chain, which defense product categories are expected to address it, and how the action should be aggregated with other actions in the same stage. Benchmark construction adds this information without changing the primary attribution result.
 
 The process has three parts. Attributed actions are first assigned canonical attack phases using ATT\&CK. Their control-point leaves are then linked to expected defense product categories. Finally, the enriched records are written into the defense opportunity map, which serves as the direct input to defense scoring.
 
