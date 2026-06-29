@@ -70,7 +70,7 @@ The process has three parts. Attributed actions are first assigned canonical att
 
 \subsubsection{Canonical Phase Assignment}
 
-The attribution domains describe where the victim-side defense failed, not when the action occurs in the attack chain. Scoring still needs this time-ordering information because blocking an early action and detecting a late action should not have the same defensive value. We therefore add a separate canonical phase layer.
+The attribution domains describe where the victim-side defense failed; they deliberately do not encode when the action occurs in the attack chain. This temporal information is still needed for scoring and reporting. It allows the framework to distinguish defense performance across attack phases, apply phase-aware weights, and interpret stage-level results in relation to attacker progress. For example, interrupting an early action usually has more defensive value than observing a late action after the attacker has already progressed through several stages. We therefore add a separate canonical phase layer.
 
 For each action, the framework assigns a canonical phase based on its ATT\&CK technique. We use ATT\&CK Enterprise tactics as the standard phase vocabulary. Some ATT\&CK techniques can be associated with multiple tactics. We resolve this ambiguity using a predefined technique-to-phase mapping. Each technique is mapped to a single canonical phase before scoring, and this mapping remains fixed during defense scoring.
 
@@ -122,7 +122,7 @@ Through these steps, benchmark construction turns attributed attack actions into
 \subsection{Defense Result Alignment}
 \label{subsec:defense-result-alignment}
 
-After the benchmark records are constructed, the evaluated defense system provides action-level observation results. Each observation describes how the defense system responded to a specific attack action in the playbook. The purpose of defense result alignment is to match these observations with the corresponding records in the defense opportunity map and convert them into normalized hit values for scoring.
+Defense scoring starts by aligning the evaluated system's observations with the benchmark records. Each observation describes how the system responded to a specific playbook action. The alignment step matches the observation to the corresponding defense opportunity record and then converts the observed result into a normalized hit value.
 
 We represent the defense observation trace as a set of action-level records. Each record contains the playbook identifier, the stage number, the action field used in the benchmark, and the observed result. Each defense observation is matched to the action record in the defense opportunity map with the same playbook identifier, stage number, and action field. After alignment, the observed result is associated with the action's control-point attribution, canonical phase, expected defense categories, confidence label, and stage aggregation semantics.
 
@@ -211,9 +211,7 @@ This formulation keeps the final score traceable: a score loss can be traced bac
 \subsection{Multi-Dimensional Score Outputs}
 \label{subsec:multi-dimensional-outputs}
 
-The scoring model does not treat the overall score as the only output. A single aggregate score can indicate whether a defense system performs well on average, but it does not explain where the score is gained or lost. To support diagnosis and comparison, the framework reports scores from multiple perspectives: overall performance, attack phase, control-point domain, defense product category, and action-level attribution.
-
-The overall score summarizes the performance of the evaluated defense system across all playbooks. It is useful as a compact indicator, but it is not intended to be interpreted alone. The same overall score may result from different defense profiles. For example, one system may cover many attack actions but only detect them late, while another system may cover fewer actions but block them reliably within its expected scope. Therefore, the overall score is reported together with the decomposed outputs.
+The overall score is useful, but it is only a starting point. Two defense systems may receive similar aggregate scores for different reasons: one may detect many actions late, while another may cover fewer actions but block them reliably within its intended scope. For this reason, the framework reports scores from multiple perspectives: overall performance, attack phase, control-point domain, defense product category, and action-level attribution.
 
 The phase-wise score groups results by canonical attack phase. This view answers the question: at which attack phases does the defense system lose the most score? Since the scoring model assigns higher value to earlier interception, phase-wise results help distinguish early-stage blocking from late-stage observation. This directly supports stage-aware analysis of APT defense capability.
 
@@ -241,7 +239,7 @@ Finally, the framework produces an action-level attribution report. For each sco
 \subsection{Prototype Method Validation}
 \label{subsec:prototype-method-validation}
 
-The preceding subsections define the attribution schema, benchmark construction process, result alignment procedure, scoring model, and multi-dimensional outputs. Before applying the framework to real defense-system replay experiments, we perform a set of prototype validation experiments on the benchmark and scoring infrastructure. These experiments do not evaluate a deployed defense product. Instead, they test whether the proposed methodological components are reproducible, whether the control-point--to--defense mapping is reasonable, and whether the scoring engine behaves correctly under boundary and parameter-variation cases.
+The preceding subsections define the attribution schema, benchmark construction process, result alignment procedure, scoring model, and multi-dimensional outputs. Before applying the framework to real defense-system replay experiments, we perform a set of prototype validation experiments on the benchmark and scoring infrastructure. These experiments test whether the proposed methodological components are reproducible, whether the control-point--to--defense mapping is reasonable, and whether the scoring engine behaves correctly under boundary and parameter-variation cases.
 
 First, we evaluate the reproducibility of defensive weakness attribution through a pilot inter-rater reliability study. A stratified sample of 50 ATT\&CK techniques and sub-techniques was independently labeled by two annotators using the same coding guide. Agreement was measured at multiple levels, including scope decision, top-level domain, leaf-level attribution, confidence label, mapping method, and secondary weakness tag. Table~\ref{tab:method-irr} summarizes the results.
 
