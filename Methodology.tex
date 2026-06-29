@@ -71,7 +71,7 @@ In summary, defensive weakness attribution converts raw attack actions into repa
 
 \subsection{Benchmark Construction}
 \label{subsec:benchmark-construction}
-After attributing defensive weaknesses, the next step is to convert the attributed script actions into benchmark records that can be used for scoring. The attribution result alone is not sufficient for scoring: it tells us which control point failed, but it does not yet specify the attack stage, the expected defense product categories, or the aggregation semantics used later by the scoring engine. Benchmark construction adds these labels without changing the primary attribution result.
+After attributing defensive weaknesses, the next step is to convert the attributed playbook actions into benchmark records that can be used for scoring. The attribution result alone is not sufficient for scoring: it tells us which control point failed, but it does not yet specify the attack stage, the expected defense product categories, or the aggregation semantics used later by the scoring engine. Benchmark construction adds these labels without changing the primary attribution result.
 
 The benchmark construction process has three components. First,each action is mapped to a canonical attack phase using ATT\&CK. Second, each control-point leaf is mapped to the defense product categories that are expected to address it. Third, the enhanced action log is written into the defense opportunity map, which will serve as direct input to the scoring phase.
 

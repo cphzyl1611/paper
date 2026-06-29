@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  29 JUN 2026 13:29
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  29 JUN 2026 14:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1708,9 +1708,6 @@ Overfull \hbox (11.94003pt too wide) in paragraph at lines 243--244
  []
 
 
-LaTeX Warning: Reference `tab:method-irr' on page 6 undefined on input line 245.
-
-
 Overfull \hbox (3.16124pt too wide) in paragraph at lines 253--254
 []|\TU/LinLibertine(1)/m/n/9 Interpretation| 
  []
@@ -1734,9 +1731,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 Overfull \hbox (20.70404pt too wide) in paragraph at lines 251--263
  [][] 
  []
-
-
-LaTeX Warning: Reference `tab:method-crosswalk-validation' on page 6 undefined on input line 267.
 
 
 
@@ -1766,9 +1760,6 @@ Underfull \hbox (badness 2707) in paragraph at lines 281--281
  []
 
 
-LaTeX Warning: Reference `tab:method-coverage-simulation' on page 7 undefined on input line 288.
-
-
 Overfull \hbox (5.70378pt too wide) in paragraph at lines 288--289
 \TU/LinLibertine(1)/m/n/9 experiments; they are boundary and coverage simulations. A perfect-
  []
@@ -1777,9 +1768,6 @@ Overfull \hbox (5.70378pt too wide) in paragraph at lines 288--289
 Overfull \hbox (5.88376pt too wide) in paragraph at lines 294--304
  [][] 
  []
-
-
-LaTeX Warning: Reference `tab:method-robustness' on page 7 undefined on input line 308.
 
 
 Overfull \hbox (11.78699pt too wide) in paragraph at lines 308--309
@@ -1870,11 +1858,7 @@ Overfull \hbox (9.12227pt too wide) in paragraph at lines 34--35
 
 
 
-(d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
-File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-) [8.8]
+[8.8]
 Overfull \hbox (14.78027pt too wide) in paragraph at lines 36--37
 \TU/LinLibertine(1)/m/n/9 gories, and aggregate action-level results into stage-level and playbook-
  []
@@ -1893,39 +1877,25 @@ Class acmart Warning: \vspace should only be used to provide space above/below s
 
 Overfull \vbox (1.542pt too high) has occurred while \output is active []
 
- [9.9]
-
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (8 not 9).
-               Rerun to correct this.
-
-(./main.aux)
+ (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+) (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf32be.def
+File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
+) [9.9] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: B5FC8E4D1B1A4BE8B964B4F5AEB90A23;2930
-(rerunfilecheck)             After:  5DD0FAFC67219AF786251E652C36D697;2895.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5DD0FAFC67219AF786251E652C36D697;2895.
  ) 
 Here is how much of TeX's memory you used:
- 33269 strings out of 473832
- 643234 string characters out of 5733157
- 1200925 words of memory out of 5000000
- 55737 multiletter control sequences out of 15000+600000
+ 33268 strings out of 473832
+ 643200 string characters out of 5733157
+ 1198658 words of memory out of 5000000
+ 55736 multiletter control sequences out of 15000+600000
  566670 words of font info for 140 fonts, out of 8000000 for 9000
  1509 hyphenation exceptions out of 8191
- 105i,17n,131p,1387b,32954s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,17n,131p,1387b,32960s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (9 pages).
