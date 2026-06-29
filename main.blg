@@ -21,45 +21,45 @@ Warning--empty address in ou2005mulval
 Warning--page numbers missing in both pages and numpages fields in ou2005mulval
 Warning--empty address in wang2008probabilistic
 Warning--empty address in wang2007measuring
-You've used 15 entries,
+You've used 19 entries,
             6056 wiz_defined-function locations,
-            1576 strings with 20810 characters,
-and the built_in function-call counts, 14616 in all, are:
-= -- 1719
-> -- 413
-< -- 0
-+ -- 128
-- -- 143
-* -- 966
-:= -- 1427
-add.period$ -- 81
-call.type$ -- 15
-change.case$ -- 96
-chr.to.int$ -- 14
-cite$ -- 24
-duplicate$ -- 1382
-empty$ -- 971
-format.name$ -- 175
-if$ -- 3428
+            1605 strings with 21479 characters,
+and the built_in function-call counts, 19290 in all, are:
+= -- 2432
+> -- 545
+< -- 1
++ -- 177
+- -- 192
+* -- 1296
+:= -- 1861
+add.period$ -- 102
+call.type$ -- 19
+change.case$ -- 123
+chr.to.int$ -- 18
+cite$ -- 28
+duplicate$ -- 1764
+empty$ -- 1238
+format.name$ -- 240
+if$ -- 4606
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 38
-newline$ -- 181
-num.names$ -- 104
-pop$ -- 518
+missing$ -- 50
+newline$ -- 217
+num.names$ -- 132
+pop$ -- 632
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 273
 quote$ -- 0
-skip$ -- 530
+skip$ -- 672
 stack$ -- 0
-substring$ -- 1067
-swap$ -- 117
-text.length$ -- 0
+substring$ -- 1457
+swap$ -- 162
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 416
+type$ -- 494
 warning$ -- 9
-while$ -- 92
+while$ -- 121
 width$ -- 0
-write$ -- 343
+write$ -- 423
 (There were 9 warnings)

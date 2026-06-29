@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{19}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -94,6 +94,15 @@
 \tempurl}
 
 
+\bibitem[Manadhata and Wing(2011)]%
+        {manadhata2011}
+\bibfield{author}{\bibinfo{person}{Pratyusa~K. Manadhata} {and} \bibinfo{person}{Jeannette~M. Wing}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{An Attack Surface Metric}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Software Engineering}} \bibinfo{volume}{37}, \bibinfo{number}{3} (\bibinfo{year}{2011}), \bibinfo{pages}{371--386}.
+\newblock
+\href{https://doi.org/10.1109/TSE.2010.60}{doi:\nolinkurl{10.1109/TSE.2010.60}}
+
+
 \bibitem[Mell et~al\mbox{.}(2006)]%
         {mell2007common}
 \bibfield{author}{\bibinfo{person}{Peter Mell}, \bibinfo{person}{Karen Scarfone}, {and} \bibinfo{person}{Sasha Romanosky}.} \bibinfo{year}{2006}\natexlab{}.
@@ -152,6 +161,24 @@
 \tempurl}
 
 
+\bibitem[Rose et~al\mbox{.}(2020)]%
+        {nist800207}
+\bibfield{author}{\bibinfo{person}{Scott Rose}, \bibinfo{person}{Oliver Borchert}, \bibinfo{person}{Stu Mitchell}, {and} \bibinfo{person}{Sean Connelly}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Zero Trust Architecture}}.
+\newblock \bibinfo{type}{NIST Special Publication} 800-207. \bibinfo{institution}{National Institute of Standards and Technology}.
+\newblock
+\href{https://doi.org/10.6028/NIST.SP.800-207}{doi:\nolinkurl{10.6028/NIST.SP.800-207}}
+
+
+\bibitem[Saltzer and Schroeder(1975)]%
+        {saltzer1975}
+\bibfield{author}{\bibinfo{person}{Jerome~H. Saltzer} {and} \bibinfo{person}{Michael~D. Schroeder}.} \bibinfo{year}{1975}\natexlab{}.
+\newblock \showarticletitle{The Protection of Information in Computer Systems}.
+\newblock \bibinfo{journal}{\emph{Proc. IEEE}} \bibinfo{volume}{63}, \bibinfo{number}{9} (\bibinfo{year}{1975}), \bibinfo{pages}{1278--1308}.
+\newblock
+\href{https://doi.org/10.1109/PROC.1975.9939}{doi:\nolinkurl{10.1109/PROC.1975.9939}}
+
+
 \bibitem[{Verizon Business}(2025)]%
         {verizon2025dbir}
 \bibfield{author}{\bibinfo{person}{{Verizon Business}}.} \bibinfo{year}{2025}\natexlab{}.
@@ -176,6 +203,15 @@
 \newblock \showarticletitle{{Measuring the Overall Security of Network Configurations Using Attack Graphs}}. In \bibinfo{booktitle}{\emph{Data and Applications Security XXI}} \emph{(\bibinfo{series}{Lecture Notes in Computer Science}, Vol.~\bibinfo{volume}{4602})}. \bibinfo{publisher}{Springer}, \bibinfo{pages}{98--112}.
 \newblock
 \href{https://doi.org/10.1007/978-3-540-73538-0_9}{doi:\nolinkurl{10.1007/978-3-540-73538-0_9}}
+
+
+\bibitem[Zheng et~al\mbox{.}(2018)]%
+        {zheng2018}
+\bibfield{author}{\bibinfo{person}{Ren Zheng}, \bibinfo{person}{Wenlian Lu}, {and} \bibinfo{person}{Shouhuai Xu}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Preventive and Reactive Cyber Defense Dynamics Is Globally Stable}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Network Science and Engineering}} \bibinfo{volume}{5}, \bibinfo{number}{2} (\bibinfo{year}{2018}), \bibinfo{pages}{156--170}.
+\newblock
+\href{https://doi.org/10.1109/TNSE.2017.2736567}{doi:\nolinkurl{10.1109/TNSE.2017.2736567}}
 
 
 \end{thebibliography}
