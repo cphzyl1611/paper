@@ -1,3 +1,50 @@
 \section{Background and Problem Statement}
 \label{sec:background}
 
+This section defines the evaluation setting considered in this paper. The goal is not to provide a general introduction to APTs, but to clarify the objects that are scored by our framework: APT playbook actions, defense observations, attack stages, and victim-side control-point failures.
+
+\subsection{APT Playbooks, Actions, and Stages}
+\label{subsec:apt-playbooks-actions-stages}
+
+An APT campaign is usually described as a multi-stage process rather than as a single attack event. In this paper, we represent such a process using an APT playbook. A playbook contains a sequence of stages, and each stage contains one or more attack actions. An attack action is the smallest unit that can be aligned with a defense observation and later used for scoring.
+
+This action-level view is important because a playbook-level result alone is too coarse. A defense system may fail to stop an entire campaign, but still detect or block important actions along the way. Conversely, a system may generate many alerts while still missing the action that allows the attacker to move to the next stage. For this reason, the benchmark should preserve action-level evidence before aggregating results to stages and playbooks.
+
+Stages also differ in how their actions contribute to attacker progress. In some stages, several actions represent alternative ways to achieve the same objective; in others, multiple actions must be completed together; in still others, a group of related actions jointly describes an attacker activity such as discovery or collection. These differences mean that stage-level scoring should not treat every group of actions as a simple average. The exact aggregation rules are defined in Section~\ref{subsec:stage-aware-scoring}; here, the key point is that stage structure is part of the evaluation problem.
+
+\subsection{Defense Observations and Evaluation Outcomes}
+\label{subsec:defense-observations-outcomes}
+
+A deployed defense stack may include endpoint, network, identity, email, logging, and response components. During an evaluation, these components may produce different kinds of evidence, such as prevention records, blocking events, alerts, logs, or analyst-facing detections. We refer to such evidence as defense observations.
+
+A defense observation is not yet a score. It first needs to be aligned with a benchmark action. After alignment, the observation can be normalized into an action-level outcome. In this paper, we use four outcome levels: \texttt{PREVENTED}, \texttt{BLOCKED}, \texttt{DETECTED}, and \texttt{MISSED}. These levels distinguish actions that are removed by design, interrupted at runtime, observed by the defense, or not covered by available evidence.
+
+This distinction is needed because different outcomes have different defensive meanings. Preventing an action through architecture or policy is not the same as detecting it after execution. Blocking an action during runtime is also different from merely logging it. A scoring framework should therefore preserve the outcome level before aggregating action results into larger scores.
+
+\subsection{From Attack Behavior to Control-Point Failure}
+\label{subsec:attack-behavior-control-point-failure}
+
+Attack descriptions and defense repair targets are not the same object. An attack technique describes what the attacker did. A control-point failure describes why the victim environment allowed the action to succeed or why the defense did not respond effectively. For repair-oriented evaluation, the second question is essential.
+
+The same attack behavior may correspond to different defensive failures in different contexts. For example, credential-related activity may be associated with weak password policy, missing multi-factor authentication, exposed remote login services, insufficient credential storage protection, phishing exposure, or delayed response. These cases may look similar from the attacker's side, but they imply different repair actions from the defender's side.
+
+We therefore use the notion of a victim-side control point. A control point is a defensive mechanism, configuration, policy, monitoring capability, or operational process that can be evaluated and improved. For each in-scope action, the evaluation should identify the control point that failed first and is most relevant for repair. This attribution does not replace attack-phase information. Instead, it complements it: the control point explains where the defense failed, while the attack phase explains when the action occurs in the campaign.
+
+\subsection{Problem Statement}
+\label{subsec:problem-statement}
+
+The problem studied in this paper can be stated as follows. Given a set of APT playbooks and action-level defense observations, construct a scoring framework that measures defense capability against multi-stage APT behaviors while keeping the resulting scores interpretable and repair-oriented.
+
+More specifically, the framework should satisfy three requirements.
+
+\begin{enumerate}
+    \item \textbf{Repair-oriented attribution.} Each in-scope attack action should be connected to a victim-side control-point failure that can guide remediation. Actions that do not correspond to a directly repairable victim-side failure should not dominate attribution-based scoring.
+
+    \item \textbf{Stage-aware aggregation.} Action-level outcomes should be aggregated according to the role of the action within its stage and the stage within the playbook. The framework should avoid treating all actions as equally valuable or all stages as having the same attacker-progress logic.
+
+    \item \textbf{Traceable score reporting.} Aggregated scores should remain explainable after computation. A low score should be traceable to the relevant playbook, stage, action, defense outcome, product category, and victim-side control-point domain.
+\end{enumerate}
+
+These requirements motivate the methodology in the next section. The proposed framework first attributes attack actions to repairable control points, then enriches them with phase and defense-category information, aligns defense observations with benchmark actions, and finally computes stage-aware and multi-dimensional scores.
+
+
