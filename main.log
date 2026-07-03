@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  2 JUL 2026 17:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  3 JUL 2026 15:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1576,6 +1576,11 @@ Overfull \hbox (6.294pt too wide) in paragraph at lines 21--22
  []
 
 ) (./related.tex
+Overfull \hbox (5.127pt too wide) in paragraph at lines 10--11
+\TU/LinLibertine(0)/m/n/9 abled by different defensive failures in different environments. Treat-
+ []
+
+
 Overfull \hbox (1.33603pt too wide) in paragraph at lines 12--13
 []\TU/LinLibertine(0)/m/n/9 MITRE ATT&CK Evaluations move closer to defense assessment
  []
@@ -1586,28 +1591,20 @@ Overfull \hbox (23.30252pt too wide) in paragraph at lines 12--13
  []
 
 
-Underfull \vbox (badness 6396) has occurred while \output is active []
 
 
-
-
-Overfull \hbox (7.01703pt too wide) in paragraph at lines 18--19
-\TU/LinLibertine(0)/m/n/9 D3FEND complements ATT&CK by organizing defensive techniques
+Overfull \hbox (1.425pt too wide) in paragraph at lines 20--21
+\TU/LinLibertine(0)/m/n/9 failed in a particular playbook action. This distinction matters when
  []
 
 
-Overfull \hbox (5.78354pt too wide) in paragraph at lines 20--21
-[]\TU/LinLibertine(0)/m/n/9 This capability-centered view is related to our defense-technology
+Overfull \hbox (8.5395pt too wide) in paragraph at lines 26--27
+\TU/LinLibertine(0)/m/n/9 studies assign quantitative or probabilistic metrics to attack graphs [[],
  []
 
 
-Overfull \hbox (8.54176pt too wide) in paragraph at lines 20--21
-\TU/LinLibertine(0)/m/n/9 crosswalk, but it is not the same as control-point attribution. D3FEND
- []
-
-
-Overfull \hbox (1.94704pt too wide) in paragraph at lines 30--31
-\TU/LinLibertine(0)/m/n/9 control-point failure, assigned a canonical phase, linked to expected
+Overfull \hbox (4.80702pt too wide) in paragraph at lines 28--29
+[]\TU/LinLibertine(0)/m/n/9 These methods make important security properties explicit. CVSS
  []
 
 
@@ -1617,8 +1614,13 @@ LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 31.
 [2.2]
-Overfull \hbox (1.53677pt too wide) in paragraph at lines 36--37
-\TU/LinLibertine(0)/m/n/9 equivalent. Third, it addresses missing attribution by linking missed
+Overfull \hbox (2.30026pt too wide) in paragraph at lines 34--35
+\TU/LinLibertine(0)/m/n/9 ganizes defensive capabilities. CVSS and attack graphs reason about
+ []
+
+
+Overfull \hbox (1.39052pt too wide) in paragraph at lines 34--35
+\TU/LinLibertine(0)/m/n/9 level defense results with control-point attribution and stage-aware
  []
 
 ) (./Background.tex) (./Methodology.tex
