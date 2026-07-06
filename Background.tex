@@ -38,8 +38,7 @@ The problem studied in this paper can be stated as follows. Given a set of APT p
 More specifically, the framework should satisfy three requirements.
 
 \begin{enumerate}
-    \item \textbf{Repair-oriented attribution.} Each in-scope attack action should be connected to a victim-side control-point failure that can guide remediation. Actions that do not correspond to a directly repairable victim-side failure should not dominate attribution-based scoring.
-
+    \item \textbf{Repair-oriented attribution.} Each in-scope attack action should be connected to a victim-side control-point failure that can guide remediation. Actions that do not correspond to a directly repairable victim-side failure should be retained for playbook completeness, but excluded from primary attribution-based scoring unless a concrete victim-side control failure can be identified.
     \item \textbf{Stage-aware aggregation.} Action-level outcomes should be aggregated according to the role of the action within its stage and the stage within the playbook. The framework should avoid treating all actions as equally valuable or all stages as having the same attacker-progress logic.
 
     \item \textbf{Traceable score reporting.} Aggregated scores should remain explainable after computation. A low score should be traceable to the relevant playbook, stage, action, defense outcome, product category, and victim-side control-point domain.

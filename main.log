@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  3 JUL 2026 15:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.16)  6 JUL 2026 15:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1638,16 +1638,26 @@ Overfull \hbox (2.77354pt too wide) in paragraph at lines 36--37
  []
 
 
+Overfull \hbox (3.84152pt too wide) in paragraph at lines 41--42
+\TU/LinLibertine(0)/m/n/9 to a directly repairable victim-side failure should be retained
+ []
+
+
+Overfull \hbox (27.16426pt too wide) in paragraph at lines 41--42
+\TU/LinLibertine(0)/m/n/9 for playbook completeness, but excluded from primary attribution-
+ []
+
+
 
 [3.3]) (./Methodology.tex
 File: figs/workflow.png Graphic file (type bmp)
 <figs/workflow.png>
 
+
+
 Overfull \hbox (18.79877pt too wide) in paragraph at lines 27--28
 \TU/LinLibertine(0)/m/n/9 repairable victim-side failure. Pre-compromise reconnaissance, attacker-
  []
-
-
 
 
 Overfull \hbox (4.58098pt too wide) in paragraph at lines 33--34
@@ -1684,16 +1694,16 @@ Overfull \hbox (3.15453pt too wide) in paragraph at lines 73--74
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[5.5]
 Overfull \hbox (2.20554pt too wide) in paragraph at lines 81--82
  \TU/LinBiolinum(0)/m/it/9 4.3.2 Defense-Category Mapping.[] \TU/LinLibertine(0)/m/n/9 The primary weakness leaf iden-
  []
 
 
-Underfull \vbox (badness 5939) has occurred while \output is active []
-
-
-
-[5.5]
 Overfull \hbox (10.53754pt too wide) in paragraph at lines 85--86
 \TU/LinLibertine(0)/m/n/9 may be primarily related to network access control or next-generation
  []
@@ -1714,7 +1724,7 @@ Overfull \hbox (11.24704pt too wide) in paragraph at lines 113--113
  []
 
 
-Underfull \vbox (badness 4752) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
