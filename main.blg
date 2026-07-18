@@ -6,23 +6,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: cition.bib
-Warning--I didn't find a database entry for "mandiant2026mtrends"
-Warning--I didn't find a database entry for "verizon2025dbir"
-Warning--I didn't find a database entry for "ibm2024costdatabreach"
-Warning--I didn't find a database entry for "mitreAttackEvaluations"
-Warning--I didn't find a database entry for "mell2007common"
-Warning--I didn't find a database entry for "wang2007measuring"
-Warning--I didn't find a database entry for "erola2022system"
-Warning--I didn't find a database entry for "mitreAttack"
-Warning--I didn't find a database entry for "mitreD3FEND"
-Warning--I didn't find a database entry for "kaloroumakis2021d3fend"
-Warning--I didn't find a database entry for "first2019cvss31"
-Warning--I didn't find a database entry for "ou2005mulval"
-Warning--I didn't find a database entry for "ou2006scalable"
-Warning--I didn't find a database entry for "saltzer1975"
-Warning--I didn't find a database entry for "nist800207"
-Warning--I didn't find a database entry for "zheng2018"
-Warning--I didn't find a database entry for "manadhata2011"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -66,6 +49,9 @@ Warning--empty publisher in hossain2017sleuth
 Warning--empty address in hossain2017sleuth
 Warning--empty publisher in jia2024magic
 Warning--empty address in jia2024magic
+Warning--empty publisher in kaloroumakis2021d3fend
+Warning--empty address in kaloroumakis2021d3fend
+Warning--page numbers missing in both pages and numpages fields in kaloroumakis2021d3fend
 Warning--empty publisher in lee2017delta
 Warning--empty address in lee2017delta
 Warning--page numbers missing in both pages and numpages fields in lee2017delta
@@ -88,6 +74,9 @@ Warning--page numbers missing in both pages and numpages fields in milajerdi2019
 Warning--empty publisher in milajerdi2019holmes
 Warning--empty address in milajerdi2019holmes
 Warning--page numbers missing in both pages and numpages fields in milajerdi2019holmes
+Warning--empty address in ou2006scalable
+Warning--empty address in ou2005mulval
+Warning--page numbers missing in both pages and numpages fields in ou2005mulval
 Warning--empty publisher in rehman2024flash
 Warning--empty address in rehman2024flash
 Warning--empty publisher in shen2019attack2vec
@@ -97,6 +86,7 @@ Warning--empty address in sheyner2002attackgraphs
 Warning--empty publisher in shin2013avantguard
 Warning--empty address in shin2013avantguard
 Warning--page numbers missing in both pages and numpages fields in shin2013avantguard
+Warning--empty address in wang2007measuring
 Warning--empty publisher in xing2021ripple
 Warning--empty address in xing2021ripple
 Warning--empty publisher in yang2023prographer
@@ -110,45 +100,45 @@ Warning--empty address in zhang2025tapas
 Warning--empty publisher in zhang2020poseidon
 Warning--empty address in zhang2020poseidon
 Warning--page numbers missing in both pages and numpages fields in zhang2020poseidon
-You've used 35 entries,
+You've used 52 entries,
             6056 wiz_defined-function locations,
-            1675 strings with 27192 characters,
-and the built_in function-call counts, 43522 in all, are:
-= -- 4444
-> -- 1803
-< -- 0
-+ -- 624
-- -- 595
-* -- 3377
-:= -- 4309
-add.period$ -- 158
-call.type$ -- 35
-change.case$ -- 333
-chr.to.int$ -- 33
-cite$ -- 116
-duplicate$ -- 4023
-empty$ -- 2809
-format.name$ -- 733
-if$ -- 10233
-int.to.chr$ -- 4
+            1757 strings with 30033 characters,
+and the built_in function-call counts, 60155 in all, are:
+= -- 6598
+> -- 2262
+< -- 1
++ -- 772
+- -- 760
+* -- 4473
+:= -- 5915
+add.period$ -- 250
+call.type$ -- 52
+change.case$ -- 439
+chr.to.int$ -- 49
+cite$ -- 140
+duplicate$ -- 5542
+empty$ -- 3877
+format.name$ -- 938
+if$ -- 14233
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 172
-newline$ -- 335
-num.names$ -- 243
-pop$ -- 1992
+missing$ -- 212
+newline$ -- 497
+num.names$ -- 361
+pop$ -- 2523
 preamble$ -- 1
-purify$ -- 609
+purify$ -- 849
 quote$ -- 0
-skip$ -- 1457
+skip$ -- 2035
 stack$ -- 0
-substring$ -- 2803
-swap$ -- 334
-text.length$ -- 0
+substring$ -- 4059
+swap$ -- 470
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 996
-warning$ -- 81
-while$ -- 167
+type$ -- 1430
+warning$ -- 88
+while$ -- 276
 width$ -- 0
-write$ -- 702
-(There were 98 warnings)
+write$ -- 1046
+(There were 88 warnings)
