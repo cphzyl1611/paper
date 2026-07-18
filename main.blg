@@ -12,54 +12,111 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Warning--empty address in frigault2008dynamic
+Warning--empty publisher in alsaheel2021atlas
+Warning--empty address in alsaheel2021atlas
+Warning--empty publisher in casado2006sane
+Warning--empty address in casado2006sane
+Warning--page numbers missing in both pages and numpages fields in casado2006sane
+Warning--empty publisher in cheng2024kairos
+Warning--empty address in cheng2024kairos
+Warning--empty publisher in dong2023distdet
+Warning--empty address in dong2023distdet
+Warning--empty publisher in du2017deeplog
+Warning--empty address in du2017deeplog
+Warning--page numbers missing in both pages and numpages fields in du2017deeplog
+Warning--empty publisher in goyal2024rcaid
+Warning--empty address in goyal2024rcaid
+Warning--page numbers missing in both pages and numpages fields in goyal2024rcaid
+Warning--empty publisher in han2020unicorn
+Warning--empty address in han2020unicorn
+Warning--page numbers missing in both pages and numpages fields in han2020unicorn
+Warning--empty publisher in hassan2020tactical
+Warning--empty address in hassan2020tactical
+Warning--page numbers missing in both pages and numpages fields in hassan2020tactical
+Warning--empty publisher in hassan2019nodoze
+Warning--empty address in hassan2019nodoze
+Warning--page numbers missing in both pages and numpages fields in hassan2019nodoze
+Warning--empty publisher in hassan2020omegalog
+Warning--empty address in hassan2020omegalog
+Warning--page numbers missing in both pages and numpages fields in hassan2020omegalog
+Warning--empty publisher in herley2017science
+Warning--empty address in herley2017science
+Warning--page numbers missing in both pages and numpages fields in herley2017science
+Warning--empty publisher in hossain2017sleuth
+Warning--empty address in hossain2017sleuth
+Warning--empty publisher in jia2024magic
+Warning--empty address in jia2024magic
 Warning--empty publisher in kaloroumakis2021d3fend
 Warning--empty address in kaloroumakis2021d3fend
 Warning--page numbers missing in both pages and numpages fields in kaloroumakis2021d3fend
+Warning--empty publisher in liu2019log2vec
+Warning--empty address in liu2019log2vec
+Warning--page numbers missing in both pages and numpages fields in liu2019log2vec
+Warning--empty publisher in milajerdi2019poirot
+Warning--empty address in milajerdi2019poirot
+Warning--page numbers missing in both pages and numpages fields in milajerdi2019poirot
+Warning--empty publisher in milajerdi2019holmes
+Warning--empty address in milajerdi2019holmes
+Warning--page numbers missing in both pages and numpages fields in milajerdi2019holmes
 Warning--empty address in ou2006scalable
 Warning--empty address in ou2005mulval
 Warning--page numbers missing in both pages and numpages fields in ou2005mulval
-Warning--empty address in wang2008probabilistic
+Warning--empty publisher in paccagnella2020logging
+Warning--empty address in paccagnella2020logging
+Warning--page numbers missing in both pages and numpages fields in paccagnella2020logging
+Warning--empty publisher in pasquier2018runtime
+Warning--empty address in pasquier2018runtime
+Warning--page numbers missing in both pages and numpages fields in pasquier2018runtime
+Warning--empty publisher in rehman2024flash
+Warning--empty address in rehman2024flash
+Warning--empty publisher in sheyner2002attackgraphs
+Warning--empty address in sheyner2002attackgraphs
 Warning--empty address in wang2007measuring
-You've used 19 entries,
+Warning--empty publisher in yang2023prographer
+Warning--empty address in yang2023prographer
+Warning--empty publisher in yuan2006fireman
+Warning--empty address in yuan2006fireman
+Warning--empty publisher in zhang2025tapas
+Warning--empty address in zhang2025tapas
+You've used 43 entries,
             6056 wiz_defined-function locations,
-            1605 strings with 21479 characters,
-and the built_in function-call counts, 19290 in all, are:
-= -- 2432
-> -- 545
+            1700 strings with 27115 characters,
+and the built_in function-call counts, 49794 in all, are:
+= -- 5537
+> -- 1975
 < -- 1
-+ -- 177
-- -- 192
-* -- 1296
-:= -- 1861
-add.period$ -- 102
-call.type$ -- 19
-change.case$ -- 123
-chr.to.int$ -- 18
-cite$ -- 28
-duplicate$ -- 1764
-empty$ -- 1238
-format.name$ -- 240
-if$ -- 4606
-int.to.chr$ -- 3
++ -- 678
+- -- 671
+* -- 3747
+:= -- 4998
+add.period$ -- 209
+call.type$ -- 43
+change.case$ -- 376
+chr.to.int$ -- 40
+cite$ -- 109
+duplicate$ -- 4475
+empty$ -- 3133
+format.name$ -- 813
+if$ -- 11766
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 50
-newline$ -- 217
-num.names$ -- 132
-pop$ -- 632
+missing$ -- 167
+newline$ -- 386
+num.names$ -- 298
+pop$ -- 2027
 preamble$ -- 1
-purify$ -- 273
+purify$ -- 714
 quote$ -- 0
-skip$ -- 672
+skip$ -- 1643
 stack$ -- 0
-substring$ -- 1457
-swap$ -- 162
+substring$ -- 3303
+swap$ -- 381
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 494
-warning$ -- 9
-while$ -- 121
+type$ -- 1160
+warning$ -- 66
+while$ -- 230
 width$ -- 0
-write$ -- 423
-(There were 9 warnings)
+write$ -- 840
+(There were 66 warnings)
