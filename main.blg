@@ -12,133 +12,133 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Warning--empty publisher in alsaheel2021atlas
-Warning--empty address in alsaheel2021atlas
+Warning--empty publisher in bilot2025simpler
+Warning--empty address in bilot2025simpler
+Warning--empty publisher in butler2002saem
+Warning--empty address in butler2002saem
+Warning--empty publisher in cao2016replay
+Warning--empty address in cao2016replay
 Warning--empty publisher in casado2006sane
 Warning--empty address in casado2006sane
 Warning--page numbers missing in both pages and numpages fields in casado2006sane
 Warning--empty publisher in cheng2024kairos
 Warning--empty address in cheng2024kairos
-Warning--empty publisher in dhawan2015sphinx
-Warning--empty address in dhawan2015sphinx
-Warning--page numbers missing in both pages and numpages fields in dhawan2015sphinx
-Warning--empty publisher in dong2023distdet
-Warning--empty address in dong2023distdet
-Warning--empty publisher in du2017deeplog
-Warning--empty address in du2017deeplog
-Warning--page numbers missing in both pages and numpages fields in du2017deeplog
+Warning--empty publisher in dong2023arewethereyet
+Warning--empty address in dong2023arewethereyet
+Warning--empty publisher in doupe2011hitem
+Warning--empty address in doupe2011hitem
+Warning--articleno or eid field, but no numpages field, in enoch2022cdgee
+Warning--page numbers missing in both pages and numpages fields in enoch2022cdgee
+Warning--articleno or eid, but no pages or numpages field in enoch2022cdgee
 Warning--empty publisher in goyal2024rcaid
 Warning--empty address in goyal2024rcaid
 Warning--page numbers missing in both pages and numpages fields in goyal2024rcaid
-Warning--empty publisher in han2020unicorn
-Warning--empty address in han2020unicorn
-Warning--page numbers missing in both pages and numpages fields in han2020unicorn
-Warning--empty publisher in hassan2020tactical
-Warning--empty address in hassan2020tactical
-Warning--page numbers missing in both pages and numpages fields in hassan2020tactical
-Warning--empty publisher in hassan2019nodoze
-Warning--empty address in hassan2019nodoze
-Warning--page numbers missing in both pages and numpages fields in hassan2019nodoze
-Warning--empty publisher in hassan2020omegalog
-Warning--empty address in hassan2020omegalog
-Warning--page numbers missing in both pages and numpages fields in hassan2020omegalog
 Warning--empty publisher in herley2017science
 Warning--empty address in herley2017science
 Warning--page numbers missing in both pages and numpages fields in herley2017science
-Warning--empty publisher in hossain2017sleuth
-Warning--empty address in hossain2017sleuth
-Warning--empty publisher in jia2024magic
-Warning--empty address in jia2024magic
+Warning--articleno or eid field, but no numpages field, in iannacone2020quantifiable
+Warning--page numbers missing in both pages and numpages fields in iannacone2020quantifiable
+Warning--articleno or eid, but no pages or numpages field in iannacone2020quantifiable
+Warning--empty publisher in inam2023sokprovenance
+Warning--empty address in inam2023sokprovenance
+Warning--empty publisher in jiang2025orthrus
+Warning--empty address in jiang2025orthrus
 Warning--empty publisher in kaloroumakis2021d3fend
 Warning--empty address in kaloroumakis2021d3fend
 Warning--page numbers missing in both pages and numpages fields in kaloroumakis2021d3fend
 Warning--empty publisher in lee2017delta
 Warning--empty address in lee2017delta
 Warning--page numbers missing in both pages and numpages fields in lee2017delta
-Warning--empty publisher in li2024nodlink
-Warning--empty address in li2024nodlink
-Warning--page numbers missing in both pages and numpages fields in li2024nodlink
 Warning--empty publisher in li2019tealeaves
 Warning--empty address in li2019tealeaves
 Warning--page numbers missing in both pages and numpages fields in li2019tealeaves
 Warning--empty publisher in liao2016ioc
 Warning--empty address in liao2016ioc
-Warning--empty publisher in liu2019log2vec
-Warning--empty address in liu2019log2vec
-Warning--page numbers missing in both pages and numpages fields in liu2019log2vec
-Warning--empty publisher in liu2021jaqen
-Warning--empty address in liu2021jaqen
-Warning--empty publisher in milajerdi2019poirot
-Warning--empty address in milajerdi2019poirot
-Warning--page numbers missing in both pages and numpages fields in milajerdi2019poirot
+Warning--articleno or eid field, but no numpages field, in liu2023defia
+Warning--page numbers missing in both pages and numpages fields in liu2023defia
+Warning--articleno or eid, but no pages or numpages field in liu2023defia
 Warning--empty publisher in milajerdi2019holmes
 Warning--empty address in milajerdi2019holmes
 Warning--page numbers missing in both pages and numpages fields in milajerdi2019holmes
+Warning--empty publisher in noel2003hardening
+Warning--empty address in noel2003hardening
+Warning--empty publisher in olszewski2025replicability
+Warning--empty address in olszewski2025replicability
 Warning--empty address in ou2006scalable
 Warning--empty address in ou2005mulval
 Warning--page numbers missing in both pages and numpages fields in ou2005mulval
-Warning--empty publisher in rehman2024flash
-Warning--empty address in rehman2024flash
+Warning--page numbers missing in both pages and numpages fields in outkin2019gpladd
+Warning--no number and no volume in outkin2022defender
+Warning--page numbers missing in both pages and numpages fields in outkin2022defender
+Warning--articleno or eid field, but no numpages field, in rosso2022saibersoc
+Warning--page numbers missing in both pages and numpages fields in rosso2022saibersoc
+Warning--articleno or eid, but no pages or numpages field in rosso2022saibersoc
+Warning--empty publisher in shen2024decoding
+Warning--empty address in shen2024decoding
 Warning--empty publisher in shen2019attack2vec
 Warning--empty address in shen2019attack2vec
 Warning--empty publisher in sheyner2002attackgraphs
 Warning--empty address in sheyner2002attackgraphs
-Warning--empty publisher in shin2013avantguard
-Warning--empty address in shin2013avantguard
-Warning--page numbers missing in both pages and numpages fields in shin2013avantguard
+Warning--empty publisher in sommer2010closedworld
+Warning--empty address in sommer2010closedworld
+Warning--empty publisher in taylor2016mtd
+Warning--empty address in taylor2016mtd
+Warning--empty publisher in vanderkouwe2019benchmarkingflaws
+Warning--empty address in vanderkouwe2019benchmarkingflaws
+Warning--empty publisher in verendel2009quantified
+Warning--empty address in verendel2009quantified
+Warning--empty publisher in virkud2024endpoint
+Warning--empty address in virkud2024endpoint
 Warning--empty address in wang2007measuring
-Warning--empty publisher in xing2021ripple
-Warning--empty address in xing2021ripple
-Warning--empty publisher in yang2023prographer
-Warning--empty address in yang2023prographer
+Warning--page numbers missing in both pages and numpages fields in werther2011ctf
 Warning--empty publisher in yoo2024smartcookie
 Warning--empty address in yoo2024smartcookie
 Warning--empty publisher in yuan2006fireman
 Warning--empty address in yuan2006fireman
-Warning--empty publisher in zhang2025tapas
-Warning--empty address in zhang2025tapas
+Warning--empty publisher in zaffarano2015mtd
+Warning--empty address in zaffarano2015mtd
 Warning--empty publisher in zhang2020poseidon
 Warning--empty address in zhang2020poseidon
 Warning--page numbers missing in both pages and numpages fields in zhang2020poseidon
-You've used 52 entries,
+You've used 62 entries,
             6056 wiz_defined-function locations,
-            1757 strings with 30033 characters,
-and the built_in function-call counts, 60155 in all, are:
-= -- 6598
-> -- 2262
+            1844 strings with 31879 characters,
+and the built_in function-call counts, 71934 in all, are:
+= -- 8701
+> -- 2462
 < -- 1
-+ -- 772
-- -- 760
-* -- 4473
-:= -- 5915
-add.period$ -- 250
-call.type$ -- 52
-change.case$ -- 439
-chr.to.int$ -- 49
-cite$ -- 140
-duplicate$ -- 5542
-empty$ -- 3877
-format.name$ -- 938
-if$ -- 14233
-int.to.chr$ -- 5
++ -- 842
+- -- 844
+* -- 5202
+:= -- 6900
+add.period$ -- 312
+call.type$ -- 62
+change.case$ -- 490
+chr.to.int$ -- 60
+cite$ -- 150
+duplicate$ -- 6493
+empty$ -- 4559
+format.name$ -- 1044
+if$ -- 17375
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 212
-newline$ -- 497
-num.names$ -- 361
-pop$ -- 2523
+missing$ -- 238
+newline$ -- 599
+num.names$ -- 432
+pop$ -- 2740
 preamble$ -- 1
-purify$ -- 849
+purify$ -- 982
 quote$ -- 0
-skip$ -- 2035
+skip$ -- 2376
 stack$ -- 0
-substring$ -- 4059
-swap$ -- 470
+substring$ -- 5166
+swap$ -- 578
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1430
+type$ -- 1596
 warning$ -- 88
-while$ -- 276
+while$ -- 374
 width$ -- 0
-write$ -- 1046
+write$ -- 1261
 (There were 88 warnings)

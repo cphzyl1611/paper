@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{52}
+\begin{thebibliography}{62}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,11 +36,40 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[Alsaheel et~al\mbox{.}(2021)]%
-        {alsaheel2021atlas}
-\bibfield{author}{\bibinfo{person}{Abdulellah Alsaheel}, \bibinfo{person}{Yuhong Nan}, \bibinfo{person}{Shiqing Ma}, \bibinfo{person}{Le Yu}, \bibinfo{person}{Gregory Walkup}, \bibinfo{person}{Z.~Berkay Celik}, \bibinfo{person}{Xiangyu Zhang}, {and} \bibinfo{person}{Dongyan Xu}.} \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{{ATLAS}: A Sequence-Based Learning Approach for Attack Investigation}. In \bibinfo{booktitle}{\emph{Proceedings of the 30th USENIX Security Symposium}}. \bibinfo{pages}{3005--3022}.
+\bibitem[Axelsson(2000)]%
+        {axelsson2000baserate}
+\bibfield{author}{\bibinfo{person}{Stefan Axelsson}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{The Base-Rate Fallacy and the Difficulty of Intrusion Detection}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Information and System Security (TISSEC)}} \bibinfo{volume}{3}, \bibinfo{number}{3} (\bibinfo{year}{2000}), \bibinfo{pages}{186--205}.
 \newblock
+\href{https://doi.org/10.1145/357830.357849}{doi:\nolinkurl{10.1145/357830.357849}}
+
+
+\bibitem[Bilot et~al\mbox{.}(2025)]%
+        {bilot2025simpler}
+\bibfield{author}{\bibinfo{person}{Tristan Bilot}, \bibinfo{person}{Baoxiang Jiang}, \bibinfo{person}{Zefeng Li}, \bibinfo{person}{Nour~El Madhoun}, \bibinfo{person}{Khaldoun~Al Agha}, \bibinfo{person}{Anis Zouaoui}, {and} \bibinfo{person}{Thomas Pasquier}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Sometimes Simpler is Better: A Comprehensive Analysis of State-of-the-Art Provenance-Based Intrusion Detection Systems}. In \bibinfo{booktitle}{\emph{34th USENIX Security Symposium}}. \bibinfo{pages}{7193--7212}.
+\newblock
+\urldef\tempurl%
+\url{https://www.usenix.org/conference/usenixsecurity25/presentation/bilot}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Butler(2002)]%
+        {butler2002saem}
+\bibfield{author}{\bibinfo{person}{Shawn~A. Butler}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Security Attribute Evaluation Method: A Cost-Benefit Approach}. In \bibinfo{booktitle}{\emph{ICSE 2002}}. \bibinfo{pages}{232--240}.
+\newblock
+\href{https://doi.org/10.1145/581339.581370}{doi:\nolinkurl{10.1145/581339.581370}}
+
+
+\bibitem[Cao et~al\mbox{.}(2016)]%
+        {cao2016replay}
+\bibfield{author}{\bibinfo{person}{Phuong Cao}, \bibinfo{person}{Eric~C. Badger}, \bibinfo{person}{Zbigniew~T. Kalbarczyk}, {and} \bibinfo{person}{Ravishankar~K. Iyer}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A Framework for Generation, Replay, and Analysis of Real-World Attack Variants}. In \bibinfo{booktitle}{\emph{HotSoS 2016 (Symposium and Bootcamp on the Science of Security)}}. \bibinfo{pages}{28--37}.
+\newblock
+\href{https://doi.org/10.1145/2898375.2898392}{doi:\nolinkurl{10.1145/2898375.2898392}}
 
 
 \bibitem[Casado et~al\mbox{.}(2006)]%
@@ -57,29 +86,29 @@
 \newblock
 
 
-\bibitem[Dhawan et~al\mbox{.}(2015)]%
-        {dhawan2015sphinx}
-\bibfield{author}{\bibinfo{person}{Mohan Dhawan}, \bibinfo{person}{Rishabh Poddar}, \bibinfo{person}{Kshiteej Mahajan}, {and} \bibinfo{person}{Vijay Mann}.} \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{{SPHINX}: Detecting Security Attacks in Software-Defined Networks}. In \bibinfo{booktitle}{\emph{Network and Distributed System Security Symposium (NDSS)}}.
-\newblock
-\urldef\tempurl%
-\url{https://www.ndss-symposium.org/ndss2015/ndss-2015-programme/sphinx-detecting-security-attacks-software-defined-networks/}
-\showURL{%
-\tempurl}
-
-
 \bibitem[Dong et~al\mbox{.}(2023)]%
-        {dong2023distdet}
-\bibfield{author}{\bibinfo{person}{Feng Dong}, \bibinfo{person}{Liu Wang}, \bibinfo{person}{Xu Nie}, \bibinfo{person}{Fei Shao}, \bibinfo{person}{Haoyu Wang}, \bibinfo{person}{Ding Li}, \bibinfo{person}{Xiapu Luo}, {and} \bibinfo{person}{Xusheng Xiao}.} \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{{DISTDET}: A Cost-Effective Distributed Cyber Threat Detection System}. In \bibinfo{booktitle}{\emph{Proceedings of the 32nd USENIX Security Symposium}}. \bibinfo{pages}{6575--6592}.
+        {dong2023arewethereyet}
+\bibfield{author}{\bibinfo{person}{Feng Dong}, \bibinfo{person}{Shaofei Li}, \bibinfo{person}{Peng Jiang}, \bibinfo{person}{Ding Li}, \bibinfo{person}{Haoyu Wang}, \bibinfo{person}{Liangyi Huang}, \bibinfo{person}{Xusheng Xiao}, \bibinfo{person}{Jiedong Chen}, \bibinfo{person}{Xiapu Luo}, \bibinfo{person}{Yao Guo}, {and} \bibinfo{person}{Xiangqun Chen}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Are we there yet? An Industrial Viewpoint on Provenance-based Endpoint Detection and Response Tools}. In \bibinfo{booktitle}{\emph{ACM CCS '23}}. \bibinfo{pages}{2396--2410}.
 \newblock
+\href{https://doi.org/10.1145/3576915.3616580}{doi:\nolinkurl{10.1145/3576915.3616580}}
 
 
-\bibitem[Du et~al\mbox{.}(2017)]%
-        {du2017deeplog}
-\bibfield{author}{\bibinfo{person}{Min Du}, \bibinfo{person}{Feifei Li}, \bibinfo{person}{Guineng Zheng}, {and} \bibinfo{person}{Vivek Srikumar}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{{DeepLog}: Anomaly Detection and Diagnosis from System Logs through Deep Learning}. In \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGSAC Conference on Computer and Communications Security}}.
+\bibitem[Doup{\'e} et~al\mbox{.}(2011)]%
+        {doupe2011hitem}
+\bibfield{author}{\bibinfo{person}{Adam Doup{\'e}}, \bibinfo{person}{Manuel Egele}, \bibinfo{person}{Benjamin Caillat}, \bibinfo{person}{Gianluca Stringhini}, \bibinfo{person}{Gorkem Yakin}, \bibinfo{person}{Ali Zand}, \bibinfo{person}{Ludovico Cavedon}, {and} \bibinfo{person}{Giovanni Vigna}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Hit 'Em Where It Hurts: A Live Security Exercise on Cyber Situational Awareness}. In \bibinfo{booktitle}{\emph{ACSAC 2011}}. \bibinfo{pages}{51--61}.
 \newblock
+\href{https://doi.org/10.1145/2076732.2076740}{doi:\nolinkurl{10.1145/2076732.2076740}}
+
+
+\bibitem[Enoch et~al\mbox{.}(2022)]%
+        {enoch2022cdgee}
+\bibfield{author}{\bibinfo{person}{Simon~Yusuf Enoch}, \bibinfo{person}{Chun~Yong Moon}, \bibinfo{person}{Donghwan Lee}, \bibinfo{person}{Myung~Kil Ahn}, {and} \bibinfo{person}{Dong~Seong Kim}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A Practical Framework for Cyber Defense Generation, Enforcement and Evaluation}.
+\newblock \bibinfo{journal}{\emph{Computer Networks}}  \bibinfo{volume}{208}, Article \bibinfo{articleno}{108878} (\bibinfo{year}{2022}).
+\newblock
+\href{https://doi.org/10.1016/j.comnet.2022.108878}{doi:\nolinkurl{10.1016/j.comnet.2022.108878}}
 
 
 \bibitem[Erola et~al\mbox{.}(2022)]%
@@ -101,6 +130,15 @@
 \shownote{Accessed: 2026-05-26}.
 
 
+\bibitem[Garcia et~al\mbox{.}(2014)]%
+        {garcia2014botnet}
+\bibfield{author}{\bibinfo{person}{Sebastian Garcia}, \bibinfo{person}{Martin Grill}, \bibinfo{person}{Jan Stiborek}, {and} \bibinfo{person}{Alejandro Zunino}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{An Empirical Comparison of Botnet Detection Methods}.
+\newblock \bibinfo{journal}{\emph{Computers \& Security}}  \bibinfo{volume}{45} (\bibinfo{year}{2014}), \bibinfo{pages}{100--123}.
+\newblock
+\href{https://doi.org/10.1016/j.cose.2014.05.011}{doi:\nolinkurl{10.1016/j.cose.2014.05.011}}
+
+
 \bibitem[{Google Cloud Mandiant}(2026)]%
         {mandiant2026mtrends}
 \bibfield{author}{\bibinfo{person}{{Google Cloud Mandiant}}.} \bibinfo{year}{2026}\natexlab{}.
@@ -111,38 +149,19 @@
 \shownote{Accessed: 2026-05-26}.
 
 
+\bibitem[Gordon and Loeb(2002)]%
+        {gordon2002economics}
+\bibfield{author}{\bibinfo{person}{Lawrence~A. Gordon} {and} \bibinfo{person}{Martin~P. Loeb}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{The Economics of Information Security Investment}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Information and System Security (TISSEC)}} \bibinfo{volume}{5}, \bibinfo{number}{4} (\bibinfo{year}{2002}), \bibinfo{pages}{438--457}.
+\newblock
+\href{https://doi.org/10.1145/581271.581274}{doi:\nolinkurl{10.1145/581271.581274}}
+
+
 \bibitem[Goyal et~al\mbox{.}(2024)]%
         {goyal2024rcaid}
 \bibfield{author}{\bibinfo{person}{Akul Goyal}, \bibinfo{person}{Gang Wang}, {and} \bibinfo{person}{Adam Bates}.} \bibinfo{year}{2024}\natexlab{}.
 \newblock \showarticletitle{{R-CAID}: Embedding Root Cause Analysis within Provenance-Based Intrusion Detection}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE Symposium on Security and Privacy}}.
-\newblock
-
-
-\bibitem[Han et~al\mbox{.}(2020)]%
-        {han2020unicorn}
-\bibfield{author}{\bibinfo{person}{Xueyuan Han}, \bibinfo{person}{Thomas Pasquier}, \bibinfo{person}{Adam Bates}, \bibinfo{person}{James Mickens}, {and} \bibinfo{person}{Margo Seltzer}.} \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{{UNICORN}: Runtime Provenance-Based Detector for Advanced Persistent Threats}. In \bibinfo{booktitle}{\emph{Proceedings of the Network and Distributed System Security Symposium}}.
-\newblock
-
-
-\bibitem[Hassan et~al\mbox{.}(2020a)]%
-        {hassan2020tactical}
-\bibfield{author}{\bibinfo{person}{Wajih~Ul Hassan}, \bibinfo{person}{Adam Bates}, {and} \bibinfo{person}{Daniel Marino}.} \bibinfo{year}{2020}\natexlab{a}.
-\newblock \showarticletitle{Tactical Provenance Analysis for Endpoint Detection and Response Systems}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE Symposium on Security and Privacy}}.
-\newblock
-
-
-\bibitem[Hassan et~al\mbox{.}(2019)]%
-        {hassan2019nodoze}
-\bibfield{author}{\bibinfo{person}{Wajih~Ul Hassan}, \bibinfo{person}{Shengjian Guo}, \bibinfo{person}{Ding Li}, \bibinfo{person}{Zhengzhang Chen}, \bibinfo{person}{Kangkook Jee}, \bibinfo{person}{Zhichun Li}, {and} \bibinfo{person}{Adam Bates}.} \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{{NoDoze}: Combatting Threat Alert Fatigue with Automated Provenance Triage}. In \bibinfo{booktitle}{\emph{Proceedings of the Network and Distributed System Security Symposium}}.
-\newblock
-
-
-\bibitem[Hassan et~al\mbox{.}(2020b)]%
-        {hassan2020omegalog}
-\bibfield{author}{\bibinfo{person}{Wajih~Ul Hassan}, \bibinfo{person}{Mark Lemay}, \bibinfo{person}{Nuraini Aguse}, \bibinfo{person}{Adam Bates}, {and} \bibinfo{person}{Thomas Moyer}.} \bibinfo{year}{2020}\natexlab{b}.
-\newblock \showarticletitle{{OmegaLog}: High-Fidelity Attack Investigation via Transparent Multi-layer Log Analysis}. In \bibinfo{booktitle}{\emph{Proceedings of the Network and Distributed System Security Symposium}}.
 \newblock
 
 
@@ -153,11 +172,13 @@
 \newblock
 
 
-\bibitem[Hossain et~al\mbox{.}(2017)]%
-        {hossain2017sleuth}
-\bibfield{author}{\bibinfo{person}{Md~Nahid Hossain}, \bibinfo{person}{Sadegh~M. Milajerdi}, \bibinfo{person}{Junao Wang}, \bibinfo{person}{Birhanu Eshete}, \bibinfo{person}{Rigel Gjomemo}, \bibinfo{person}{R. Sekar}, \bibinfo{person}{Scott Stoller}, {and} \bibinfo{person}{V.~N. Venkatakrishnan}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{{SLEUTH}: Real-time Attack Scenario Reconstruction from {COTS} Audit Data}. In \bibinfo{booktitle}{\emph{Proceedings of the 26th USENIX Security Symposium}}. \bibinfo{pages}{487--504}.
+\bibitem[Iannacone and Bridges(2020)]%
+        {iannacone2020quantifiable}
+\bibfield{author}{\bibinfo{person}{Michael~D. Iannacone} {and} \bibinfo{person}{Robert~A. Bridges}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Quantifiable \& Comparable Evaluations of Cyber Defensive Capabilities: A Survey \& Novel, Unified Approach}.
+\newblock \bibinfo{journal}{\emph{Computers \& Security}}  \bibinfo{volume}{96}, Article \bibinfo{articleno}{101907} (\bibinfo{year}{2020}).
 \newblock
+\href{https://doi.org/10.1016/j.cose.2020.101907}{doi:\nolinkurl{10.1016/j.cose.2020.101907}}
 
 
 \bibitem[{IBM Security}(2024)]%
@@ -170,13 +191,21 @@
 \shownote{Accessed: 2026-05-26}.
 
 
-\bibitem[Jia et~al\mbox{.}(2024)]%
-        {jia2024magic}
-\bibfield{author}{\bibinfo{person}{Zian Jia}, \bibinfo{person}{Yun Xiong}, \bibinfo{person}{Yuhong Nan}, \bibinfo{person}{Yao Zhang}, \bibinfo{person}{Jinjing Zhao}, {and} \bibinfo{person}{Mi Wen}.} \bibinfo{year}{2024}\natexlab{}.
-\newblock \showarticletitle{{MAGIC}: Detecting Advanced Persistent Threats via Masked Graph Representation Learning}. In \bibinfo{booktitle}{\emph{33rd USENIX Security Symposium (USENIX Security 24)}}. \bibinfo{pages}{5197--5214}.
+\bibitem[Inam et~al\mbox{.}(2023)]%
+        {inam2023sokprovenance}
+\bibfield{author}{\bibinfo{person}{Muhammad~Adil Inam}, \bibinfo{person}{Yinfang Chen}, \bibinfo{person}{Akul Goyal}, \bibinfo{person}{Jason Liu}, \bibinfo{person}{Jaron Mink}, \bibinfo{person}{Noor Michael}, \bibinfo{person}{Sneha Gaur}, \bibinfo{person}{Adam Bates}, {and} \bibinfo{person}{Wajih~Ul Hassan}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{SoK: History is a Vast Early Warning System: Auditing the Provenance of System Intrusions}. In \bibinfo{booktitle}{\emph{IEEE Symposium on Security and Privacy}}. \bibinfo{pages}{2620--2638}.
+\newblock
+\href{https://doi.org/10.1109/SP46215.2023.10179405}{doi:\nolinkurl{10.1109/SP46215.2023.10179405}}
+
+
+\bibitem[Jiang et~al\mbox{.}(2025)]%
+        {jiang2025orthrus}
+\bibfield{author}{\bibinfo{person}{Baoxiang Jiang}, \bibinfo{person}{Tristan Bilot}, \bibinfo{person}{Nour~El Madhoun}, \bibinfo{person}{Khaldoun~Al Agha}, \bibinfo{person}{Anis Zouaoui}, \bibinfo{person}{Shahrear Iqbal}, \bibinfo{person}{Xueyuan Han}, {and} \bibinfo{person}{Thomas Pasquier}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{ORTHRUS}: Achieving High Quality of Attribution in Provenance-based Intrusion Detection Systems}. In \bibinfo{booktitle}{\emph{34th USENIX Security Symposium}}. \bibinfo{pages}{7173--7192}.
 \newblock
 \urldef\tempurl%
-\url{https://www.usenix.org/conference/usenixsecurity24/presentation/jia-zian}
+\url{https://www.usenix.org/conference/usenixsecurity25/presentation/jiang-baoxiang}
 \showURL{%
 \tempurl}
 
@@ -203,12 +232,13 @@
 \tempurl}
 
 
-\bibitem[Li et~al\mbox{.}(2024)]%
-        {li2024nodlink}
-\bibfield{author}{\bibinfo{person}{Shaofei Li}, \bibinfo{person}{Feng Dong}, \bibinfo{person}{Xusheng Xiao}, \bibinfo{person}{Haoyu Wang}, \bibinfo{person}{Fei Shao}, \bibinfo{person}{Jiedong Chen}, \bibinfo{person}{Yao Guo}, \bibinfo{person}{Xiangqun Chen}, {and} \bibinfo{person}{Ding Li}.} \bibinfo{year}{2024}\natexlab{}.
-\newblock \showarticletitle{{NODLINK}: An Online System for Fine-Grained {APT} Attack Detection and Investigation}. In \bibinfo{booktitle}{\emph{Network and Distributed System Security Symposium (NDSS)}}.
+\bibitem[Leversage and Byres(2008)]%
+        {leversage2008mttc}
+\bibfield{author}{\bibinfo{person}{David~John Leversage} {and} \bibinfo{person}{Eric~J. Byres}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Estimating a System's Mean Time-to-Compromise}.
+\newblock \bibinfo{journal}{\emph{IEEE Security \& Privacy}} \bibinfo{volume}{6}, \bibinfo{number}{1} (\bibinfo{year}{2008}), \bibinfo{pages}{52--60}.
 \newblock
-\href{https://doi.org/10.14722/ndss.2024.23204}{doi:\nolinkurl{10.14722/ndss.2024.23204}}
+\href{https://doi.org/10.1109/MSP.2008.9}{doi:\nolinkurl{10.1109/MSP.2008.9}}
 
 
 \bibitem[Li et~al\mbox{.}(2019)]%
@@ -230,22 +260,13 @@
 \href{https://doi.org/10.1145/2976749.2978315}{doi:\nolinkurl{10.1145/2976749.2978315}}
 
 
-\bibitem[Liu et~al\mbox{.}(2019)]%
-        {liu2019log2vec}
-\bibfield{author}{\bibinfo{person}{Fucheng Liu}, \bibinfo{person}{Yu Wen}, \bibinfo{person}{Dongrui Zhang}, \bibinfo{person}{Xinyu Jiang}, \bibinfo{person}{Xinyu Xing}, {and} \bibinfo{person}{Dan Meng}.} \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{{Log2Vec}: A Heterogeneous Graph Embedding Based Approach for Detecting Cyber Threats within Enterprise}. In \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGSAC Conference on Computer and Communications Security}}.
+\bibitem[Liu et~al\mbox{.}(2023)]%
+        {liu2023defia}
+\bibfield{author}{\bibinfo{person}{Zhen Liu}, \bibinfo{person}{Changzhen Hu}, \bibinfo{person}{Chun Shan}, {and} \bibinfo{person}{Zheheng Peng}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{DEFIA}: Evaluate Defense Effectiveness by Fusing Behavior Information of Cyberattacks}.
+\newblock \bibinfo{journal}{\emph{Information Sciences}}  \bibinfo{volume}{646}, Article \bibinfo{articleno}{119375} (\bibinfo{year}{2023}).
 \newblock
-
-
-\bibitem[Liu et~al\mbox{.}(2021)]%
-        {liu2021jaqen}
-\bibfield{author}{\bibinfo{person}{Zaoxing Liu}, \bibinfo{person}{Hun Namkung}, \bibinfo{person}{Georgios Nikolaidis}, \bibinfo{person}{Jeongkeun Lee}, \bibinfo{person}{Changhoon Kim}, \bibinfo{person}{Xin Jin}, \bibinfo{person}{Vladimir Braverman}, \bibinfo{person}{Minlan Yu}, {and} \bibinfo{person}{Vyas Sekar}.} \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{Jaqen: A High-Performance Switch-Native Approach for Detecting and Mitigating Volumetric {DDoS} Attacks with Programmable Switches}. In \bibinfo{booktitle}{\emph{30th USENIX Security Symposium (USENIX Security 21)}}. \bibinfo{pages}{3829--3846}.
-\newblock
-\urldef\tempurl%
-\url{https://www.usenix.org/conference/usenixsecurity21/presentation/liu-zaoxing}
-\showURL{%
-\tempurl}
+\href{https://doi.org/10.1016/j.ins.2023.119375}{doi:\nolinkurl{10.1016/j.ins.2023.119375}}
 
 
 \bibitem[Manadhata and Wing(2011)]%
@@ -266,23 +287,26 @@
 \href{https://doi.org/10.1109/MSP.2006.145}{doi:\nolinkurl{10.1109/MSP.2006.145}}
 
 
-\bibitem[Milajerdi et~al\mbox{.}(2019a)]%
-        {milajerdi2019poirot}
-\bibfield{author}{\bibinfo{person}{Sadegh~M. Milajerdi}, \bibinfo{person}{Birhanu Eshete}, \bibinfo{person}{Rigel Gjomemo}, \bibinfo{person}{R. Sekar}, {and} \bibinfo{person}{V.~N. Venkatakrishnan}.} \bibinfo{year}{2019}\natexlab{a}.
-\newblock \showarticletitle{{POIROT}: Aligning Attack Behavior with Kernel Audit Records for Cyber Threat Hunting}. In \bibinfo{booktitle}{\emph{Proceedings of the ACM SIGSAC Conference on Computer and Communications Security}}.
-\newblock
-
-
-\bibitem[Milajerdi et~al\mbox{.}(2019b)]%
+\bibitem[Milajerdi et~al\mbox{.}(2019)]%
         {milajerdi2019holmes}
-\bibfield{author}{\bibinfo{person}{Sadegh~M. Milajerdi}, \bibinfo{person}{Rigel Gjomemo}, \bibinfo{person}{Birhanu Eshete}, \bibinfo{person}{R. Sekar}, {and} \bibinfo{person}{V.~N. Venkatakrishnan}.} \bibinfo{year}{2019}\natexlab{b}.
+\bibfield{author}{\bibinfo{person}{Sadegh~M. Milajerdi}, \bibinfo{person}{Rigel Gjomemo}, \bibinfo{person}{Birhanu Eshete}, \bibinfo{person}{R. Sekar}, {and} \bibinfo{person}{V.~N. Venkatakrishnan}.} \bibinfo{year}{2019}\natexlab{}.
 \newblock \showarticletitle{{HOLMES}: Real-time {APT} Detection through Correlation of Suspicious Information Flows}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE Symposium on Security and Privacy}}.
 \newblock
 
 
 \bibitem[{MITRE}(2026a)]%
-        {mitreAttack}
+        {caldera}
 \bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{{CALDERA: Automated Adversary Emulation Platform}}.
+\newblock \bibinfo{howpublished}{\url{https://caldera.readthedocs.io/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[{MITRE}(2026b)]%
+        {mitreAttack}
+\bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{b}.
 \newblock \bibinfo{title}{{MITRE ATT\&CK}}.
 \newblock \bibinfo{howpublished}{\url{https://attack.mitre.org/}}.
 \newblock
@@ -290,14 +314,24 @@
 \shownote{Accessed: 2026-05-26}.
 
 
-\bibitem[{MITRE}(2026b)]%
+\bibitem[{MITRE}(2026c)]%
         {mitreD3FEND}
-\bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{b}.
+\bibfield{author}{\bibinfo{person}{{MITRE}}.} \bibinfo{year}{2026}\natexlab{c}.
 \newblock \bibinfo{title}{{MITRE D3FEND: A Knowledge Graph of Cybersecurity Countermeasures}}.
 \newblock \bibinfo{howpublished}{\url{https://d3fend.mitre.org/}}.
 \newblock
 \newblock
 \shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[{MITRE Center for Threat-Informed Defense}(2022)]%
+        {mitreCTIDMappings}
+\bibfield{author}{\bibinfo{person}{{MITRE Center for Threat-Informed Defense}}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{{ATT}\&{CK} to {NIST} {SP} 800-53 Control Mappings}.
+\newblock \bibinfo{howpublished}{\url{https://ctid.mitre.org/projects/nist-800-53-control-mappings/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-02}.
 
 
 \bibitem[{MITRE Engenuity}(2026)]%
@@ -308,6 +342,25 @@
 \newblock
 \newblock
 \shownote{Accessed: 2026-05-26}.
+
+
+\bibitem[Noel et~al\mbox{.}(2003)]%
+        {noel2003hardening}
+\bibfield{author}{\bibinfo{person}{Steven Noel}, \bibinfo{person}{Sushil Jajodia}, \bibinfo{person}{Brian O'Berry}, {and} \bibinfo{person}{Michael Jacobs}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Efficient Minimum-Cost Network Hardening Via Exploit Dependency Graphs}. In \bibinfo{booktitle}{\emph{ACSAC 2003}}. \bibinfo{pages}{86--95}.
+\newblock
+\href{https://doi.org/10.1109/CSAC.2003.1254313}{doi:\nolinkurl{10.1109/CSAC.2003.1254313}}
+
+
+\bibitem[Olszewski et~al\mbox{.}(2025)]%
+        {olszewski2025replicability}
+\bibfield{author}{\bibinfo{person}{Daniel Olszewski}, \bibinfo{person}{Tyler Tucker}, \bibinfo{person}{Kevin R.~B. Butler}, {and} \bibinfo{person}{Patrick Traynor}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{SoK: Towards a Unified Approach to Applied Replicability for Computer Security}. In \bibinfo{booktitle}{\emph{34th USENIX Security Symposium}}. \bibinfo{pages}{469--488}.
+\newblock
+\urldef\tempurl%
+\url{https://www.usenix.org/conference/usenixsecurity25/presentation/olszewski}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Ou et~al\mbox{.}(2006)]%
@@ -329,12 +382,22 @@
 \tempurl}
 
 
-\bibitem[Rehman et~al\mbox{.}(2024)]%
-        {rehman2024flash}
-\bibfield{author}{\bibinfo{person}{Mati~Ur Rehman}, \bibinfo{person}{Hadi Ahmadi}, {and} \bibinfo{person}{Wajih~Ul Hassan}.} \bibinfo{year}{2024}\natexlab{}.
-\newblock \showarticletitle{{FLASH}: A Comprehensive Approach to Intrusion Detection via Provenance Graph Representation Learning}. In \bibinfo{booktitle}{\emph{2024 IEEE Symposium on Security and Privacy}}. \bibinfo{pages}{3552--3570}.
+\bibitem[Outkin et~al\mbox{.}(2019)]%
+        {outkin2019gpladd}
+\bibfield{author}{\bibinfo{person}{Alexander~V. Outkin}, \bibinfo{person}{Brandon~K. Eames}, \bibinfo{person}{Meghan~A. Galiardi}, \bibinfo{person}{Sarah Walsh}, \bibinfo{person}{Eric~D. Vugrin}, \bibinfo{person}{Byron Heersink}, \bibinfo{person}{Jacob~A. Hobbs}, {and} \bibinfo{person}{Gregory~D. Wyss}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{GPLADD}: Quantifying Trust in Government and Commercial Systems: A Game-Theoretic Approach}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Privacy and Security (TOPS)}} \bibinfo{volume}{22}, \bibinfo{number}{3} (\bibinfo{year}{2019}).
 \newblock
-\href{https://doi.org/10.1109/SP54263.2024.00139}{doi:\nolinkurl{10.1109/SP54263.2024.00139}}
+\href{https://doi.org/10.1145/3326283}{doi:\nolinkurl{10.1145/3326283}}
+
+
+\bibitem[Outkin et~al\mbox{.}(2022)]%
+        {outkin2022defender}
+\bibfield{author}{\bibinfo{person}{Alexander~V. Outkin}, \bibinfo{person}{Patricia~V. Schulz}, \bibinfo{person}{Timothy Schulz}, \bibinfo{person}{Thomas~D. Tarman}, {and} \bibinfo{person}{Ali Pinar}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Defender Policy Evaluation and Resource Allocation With {MITRE} {ATT\&CK} Evaluations Data}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Dependable and Secure Computing (TDSC)}} (\bibinfo{year}{2022}).
+\newblock
+\href{https://doi.org/10.1109/TDSC.2022.3165624}{doi:\nolinkurl{10.1109/TDSC.2022.3165624}}
 
 
 \bibitem[Rose et~al\mbox{.}(2020)]%
@@ -346,6 +409,15 @@
 \href{https://doi.org/10.6028/NIST.SP.800-207}{doi:\nolinkurl{10.6028/NIST.SP.800-207}}
 
 
+\bibitem[Rosso et~al\mbox{.}(2022)]%
+        {rosso2022saibersoc}
+\bibfield{author}{\bibinfo{person}{Martin Rosso}, \bibinfo{person}{Michele Campobasso}, \bibinfo{person}{Ganduulga Gankhuyag}, {and} \bibinfo{person}{Luca Allodi}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{{SAIBERSOC}: A Methodology and Tool for Experimenting with Security Operation Centers}.
+\newblock \bibinfo{journal}{\emph{ACM Digital Threats: Research and Practice (DTRAP)}} \bibinfo{volume}{3}, \bibinfo{number}{2}, Article \bibinfo{articleno}{14} (\bibinfo{year}{2022}).
+\newblock
+\href{https://doi.org/10.1145/3491266}{doi:\nolinkurl{10.1145/3491266}}
+
+
 \bibitem[Saltzer and Schroeder(1975)]%
         {saltzer1975}
 \bibfield{author}{\bibinfo{person}{Jerome~H. Saltzer} {and} \bibinfo{person}{Michael~D. Schroeder}.} \bibinfo{year}{1975}\natexlab{}.
@@ -353,6 +425,14 @@
 \newblock \bibinfo{journal}{\emph{Proc. IEEE}} \bibinfo{volume}{63}, \bibinfo{number}{9} (\bibinfo{year}{1975}), \bibinfo{pages}{1278--1308}.
 \newblock
 \href{https://doi.org/10.1109/PROC.1975.9939}{doi:\nolinkurl{10.1109/PROC.1975.9939}}
+
+
+\bibitem[Shen et~al\mbox{.}(2024)]%
+        {shen2024decoding}
+\bibfield{author}{\bibinfo{person}{Xiangmin Shen}, \bibinfo{person}{Zhenyuan Li}, \bibinfo{person}{Graham Burleigh}, \bibinfo{person}{Lingzhi Wang}, {and} \bibinfo{person}{Yan Chen}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Decoding the {MITRE} Engenuity {ATT\&CK} Enterprise Evaluation: An Analysis of {EDR} Performance in Real-World Environments}. In \bibinfo{booktitle}{\emph{ASIA CCS '24}}. \bibinfo{pages}{96--111}.
+\newblock
+\href{https://doi.org/10.1145/3634737.3645012}{doi:\nolinkurl{10.1145/3634737.3645012}}
 
 
 \bibitem[Shen and Stringhini(2019)]%
@@ -373,12 +453,36 @@
 \newblock
 
 
-\bibitem[Shin et~al\mbox{.}(2013)]%
-        {shin2013avantguard}
-\bibfield{author}{\bibinfo{person}{Seungwon Shin}, \bibinfo{person}{Vinod Yegneswaran}, \bibinfo{person}{Phillip Porras}, {and} \bibinfo{person}{Guofei Gu}.} \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{{AVANT-GUARD}: Scalable and Vigilant Switch Flow Management in Software-Defined Networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 2013 ACM SIGSAC Conference on Computer and Communications Security}}.
+\bibitem[Sommer and Paxson(2010)]%
+        {sommer2010closedworld}
+\bibfield{author}{\bibinfo{person}{Robin Sommer} {and} \bibinfo{person}{Vern Paxson}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Outside the Closed World: On Using Machine Learning for Network Intrusion Detection}. In \bibinfo{booktitle}{\emph{IEEE Symposium on Security and Privacy}}. \bibinfo{pages}{305--316}.
 \newblock
-\href{https://doi.org/10.1145/2508859.2516684}{doi:\nolinkurl{10.1145/2508859.2516684}}
+\href{https://doi.org/10.1109/SP.2010.25}{doi:\nolinkurl{10.1109/SP.2010.25}}
+
+
+\bibitem[Taylor et~al\mbox{.}(2016)]%
+        {taylor2016mtd}
+\bibfield{author}{\bibinfo{person}{Joshua Taylor}, \bibinfo{person}{Kara Zaffarano}, \bibinfo{person}{Ben Koller}, \bibinfo{person}{Charlie Bancroft}, {and} \bibinfo{person}{Jason Syversen}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Automated Effectiveness Evaluation of Moving Target Defenses: Metrics for Missions and Attacks}. In \bibinfo{booktitle}{\emph{ACM Workshop on Moving Target Defense (MTD)}}. \bibinfo{pages}{129--134}.
+\newblock
+\href{https://doi.org/10.1145/2995272.2995282}{doi:\nolinkurl{10.1145/2995272.2995282}}
+
+
+\bibitem[van~der Kouwe et~al\mbox{.}(2019)]%
+        {vanderkouwe2019benchmarkingflaws}
+\bibfield{author}{\bibinfo{person}{Erik van~der Kouwe}, \bibinfo{person}{Gernot Heiser}, \bibinfo{person}{Dennis Andriesse}, \bibinfo{person}{Herbert Bos}, {and} \bibinfo{person}{Cristiano Giuffrida}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{SoK: Benchmarking Flaws in Systems Security}. In \bibinfo{booktitle}{\emph{IEEE European Symposium on Security and Privacy (EuroS\&P)}}. \bibinfo{pages}{310--325}.
+\newblock
+\href{https://doi.org/10.1109/EuroSP.2019.00031}{doi:\nolinkurl{10.1109/EuroSP.2019.00031}}
+
+
+\bibitem[Verendel(2009)]%
+        {verendel2009quantified}
+\bibfield{author}{\bibinfo{person}{Vilhelm Verendel}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Quantified Security is a Weak Hypothesis: A Critical Survey of Results and Assumptions}. In \bibinfo{booktitle}{\emph{New Security Paradigms Workshop (NSPW)}}. \bibinfo{pages}{37--49}.
+\newblock
+\href{https://doi.org/10.1145/1719030.1719036}{doi:\nolinkurl{10.1145/1719030.1719036}}
 
 
 \bibitem[{Verizon Business}(2025)]%
@@ -391,12 +495,32 @@
 \shownote{Accessed: 2026-05-26}.
 
 
+\bibitem[Virkud et~al\mbox{.}(2024)]%
+        {virkud2024endpoint}
+\bibfield{author}{\bibinfo{person}{Apurva Virkud}, \bibinfo{person}{Muhammad~Adil Inam}, \bibinfo{person}{Andy Riddle}, \bibinfo{person}{Jason Liu}, \bibinfo{person}{Gang Wang}, {and} \bibinfo{person}{Adam Bates}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{How does Endpoint Detection use the {MITRE} {ATT\&CK} Framework?}. In \bibinfo{booktitle}{\emph{33rd USENIX Security Symposium}}. \bibinfo{pages}{3891--3908}.
+\newblock
+\urldef\tempurl%
+\url{https://www.usenix.org/conference/usenixsecurity24/presentation/virkud}
+\showURL{%
+\tempurl}
+
+
 \bibitem[Wang et~al\mbox{.}(2014)]%
         {wang2014kzero}
 \bibfield{author}{\bibinfo{person}{Lingyu Wang}, \bibinfo{person}{Sushil Jajodia}, \bibinfo{person}{Anoop Singhal}, \bibinfo{person}{Pengsu Cheng}, {and} \bibinfo{person}{Steven Noel}.} \bibinfo{year}{2014}\natexlab{}.
 \newblock \showarticletitle{{k}-Zero Day Safety: A Network Security Metric for Measuring the Risk of Unknown Vulnerabilities}.
 \newblock \bibinfo{journal}{\emph{IEEE Transactions on Dependable and Secure Computing}} \bibinfo{volume}{11}, \bibinfo{number}{1} (\bibinfo{year}{2014}), \bibinfo{pages}{30--44}.
 \newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2006)]%
+        {wang2006hardening}
+\bibfield{author}{\bibinfo{person}{Lingyu Wang}, \bibinfo{person}{Steven Noel}, {and} \bibinfo{person}{Sushil Jajodia}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Minimum-cost network hardening using attack graphs}.
+\newblock \bibinfo{journal}{\emph{Computer Communications}} \bibinfo{volume}{29}, \bibinfo{number}{18} (\bibinfo{year}{2006}), \bibinfo{pages}{3812--3824}.
+\newblock
+\href{https://doi.org/10.1016/j.comcom.2006.06.018}{doi:\nolinkurl{10.1016/j.comcom.2006.06.018}}
 
 
 \bibitem[Wang et~al\mbox{.}(2007)]%
@@ -407,32 +531,13 @@
 \href{https://doi.org/10.1007/978-3-540-73538-0_9}{doi:\nolinkurl{10.1007/978-3-540-73538-0_9}}
 
 
-\bibitem[Wang et~al\mbox{.}(2022)]%
-        {wang2022threatrace}
-\bibfield{author}{\bibinfo{person}{Su Wang}, \bibinfo{person}{Zhiliang Wang}, \bibinfo{person}{Tao Zhou}, \bibinfo{person}{Xia Yin}, \bibinfo{person}{Dongqi Han}, \bibinfo{person}{Han Zhang}, \bibinfo{person}{Hongbin Sun}, \bibinfo{person}{Xingang Shi}, {and} \bibinfo{person}{Jiahai Yang}.} \bibinfo{year}{2022}\natexlab{}.
-\newblock \showarticletitle{{threaTrace}: Detecting and Tracing Host-Based Threats in Node Level through Provenance Graph Learning}.
-\newblock \bibinfo{journal}{\emph{IEEE Transactions on Information Forensics and Security}}  \bibinfo{volume}{17} (\bibinfo{year}{2022}), \bibinfo{pages}{3972--3987}.
-\newblock
-
-
-\bibitem[Xing et~al\mbox{.}(2021)]%
-        {xing2021ripple}
-\bibfield{author}{\bibinfo{person}{Jiarong Xing}, \bibinfo{person}{Wenqing Wu}, {and} \bibinfo{person}{Ang Chen}.} \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{Ripple: A Programmable, Decentralized Link-Flooding Defense Against Adaptive Adversaries}. In \bibinfo{booktitle}{\emph{30th USENIX Security Symposium (USENIX Security 21)}}. \bibinfo{pages}{3865--3880}.
+\bibitem[Werther et~al\mbox{.}(2011)]%
+        {werther2011ctf}
+\bibfield{author}{\bibinfo{person}{Joseph~M. Werther}, \bibinfo{person}{Michael~A. Zhivich}, \bibinfo{person}{Timothy~R. Leek}, {and} \bibinfo{person}{Nickolai Zeldovich}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Experiences in Cyber Security Education: The {MIT} Lincoln Laboratory {Capture-the-Flag} Exercise}. In \bibinfo{booktitle}{\emph{4th Workshop on Cyber Security Experimentation and Test ({CSET} 11)}}. \bibinfo{publisher}{USENIX Association}, \bibinfo{address}{San Francisco, CA}.
 \newblock
 \urldef\tempurl%
-\url{https://www.usenix.org/conference/usenixsecurity21/presentation/xing}
-\showURL{%
-\tempurl}
-
-
-\bibitem[Yang et~al\mbox{.}(2023)]%
-        {yang2023prographer}
-\bibfield{author}{\bibinfo{person}{Fan Yang}, \bibinfo{person}{Jiacen Xu}, \bibinfo{person}{Chunlin Xiong}, \bibinfo{person}{Zhou Li}, {and} \bibinfo{person}{Kehuan Zhang}.} \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{{PROGRAPHER}: An Anomaly Detection System based on Provenance Graph Embedding}. In \bibinfo{booktitle}{\emph{32nd USENIX Security Symposium (USENIX Security 23)}}. \bibinfo{pages}{4355--4372}.
-\newblock
-\urldef\tempurl%
-\url{https://www.usenix.org/conference/usenixsecurity23/presentation/yang-fan}
+\url{https://www.usenix.org/conference/cset11/experiences-cyber-security-education-mit-lincoln-laboratory-capture-flag-exercise}
 \showURL{%
 \tempurl}
 
@@ -455,15 +560,12 @@
 \newblock
 
 
-\bibitem[Zhang et~al\mbox{.}(2025)]%
-        {zhang2025tapas}
-\bibfield{author}{\bibinfo{person}{Bo Zhang}, \bibinfo{person}{Yansong Gao}, \bibinfo{person}{Changlong Yu}, \bibinfo{person}{Boyu Kuang}, \bibinfo{person}{Zhi Zhang}, \bibinfo{person}{Hyoungshick Kim}, {and} \bibinfo{person}{Anmin Fu}.} \bibinfo{year}{2025}\natexlab{}.
-\newblock \showarticletitle{{TAPAS}: An Efficient Online {APT} Detection with Task-guided Process Provenance Graph Segmentation and Analysis}. In \bibinfo{booktitle}{\emph{34th USENIX Security Symposium (USENIX Security 25)}}. \bibinfo{pages}{607--624}.
+\bibitem[Zaffarano et~al\mbox{.}(2015)]%
+        {zaffarano2015mtd}
+\bibfield{author}{\bibinfo{person}{Kara Zaffarano}, \bibinfo{person}{Joshua Taylor}, {and} \bibinfo{person}{Samuel~N. Hamilton}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{A Quantitative Framework for Moving Target Defense Effectiveness Evaluation}. In \bibinfo{booktitle}{\emph{ACM Workshop on Moving Target Defense (MTD)}}. \bibinfo{pages}{3--10}.
 \newblock
-\urldef\tempurl%
-\url{https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-bo-tapas}
-\showURL{%
-\tempurl}
+\href{https://doi.org/10.1145/2808475.2808476}{doi:\nolinkurl{10.1145/2808475.2808476}}
 
 
 \bibitem[Zhang et~al\mbox{.}(2020)]%
