@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.16)  2 AUG 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.16)  26 AUG 2026 01:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -973,99 +973,126 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
  (./intro.tex
 
 
+Overfull \hbox (6.04259pt too wide) in paragraph at lines 43--52
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) A third line ag-gre-gates ob-ser-va-tions into an over-all fig-ure. Security-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 21.
+(Font)              scaled to size 6.0pt on input line 76.
 [1.1{d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 
-{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]) (./related.tex
-
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 46.
-(d:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 87.
+ (d:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 87.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+Overfull \hbox (6.85226pt too wide) in paragraph at lines 109--113
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) con-tain-ing it, ag-gre-gate out-comes un-der each stage's recorded
+ []
+
+) (./related.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 56.
+(Font)              scaled to size 9.0pt on input line 15.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 56.
+(Font)              scaled to size 7.0pt on input line 15.
 [2.2{d:/texlive/2025/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}]
+Underfull \vbox (badness 4279) has occurred while \output is active []
 
 
-Underfull \hbox (badness 7944) in paragraph at lines 89--89
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[3.3]
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
+
+
+
+Underfull \hbox (badness 7944) in paragraph at lines 60--60
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Technique, em-u-lated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Partial; process- or
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 90--90
+Underfull \hbox (badness 1210) in paragraph at lines 61--61
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Technique or eval-u-a-
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 90--91
+Underfull \hbox (badness 1810) in paragraph at lines 61--62
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Indirect; scoped to one
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 91--91
+Underfull \hbox (badness 2173) in paragraph at lines 62--62
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Costs, mis-sion met-rics, or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Multi-stage rea-son-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Vulnerability, con-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Validity and re-pro-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 94--94
+Underfull \hbox (badness 3758) in paragraph at lines 65--65
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Control cat-a-logs and ex-e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Technique--control
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Control-oriented; doc-u-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Action--outcome--
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T1/LinuxLibertineT-TLF/m/n/8 (+20) Stage-aware, multi-
  []
 
@@ -1074,50 +1101,47 @@ Underfull \vbox (badness 4279) has occurred while \output is active []
 
 
 
-[3.3]) (./Background.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[4.4]) (./Background.tex
+
+
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
 
 
-
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
-
-
-[4.4]
-
-) (./Methodology.tex
-<figs/workflow.png, id=270, 1806.75pt x 798.985pt>
+[5.5]) (./Methodology.tex
+<figs/workflow.png, id=290, 1806.75pt x 798.985pt>
 File: figs/workflow.png Graphic file (type png)
 <use figs/workflow.png>
 Package pdftex.def Info: figs/workflow.png  used on input line 6.
 (pdftex.def)             Requested size: 480.9787pt x 212.69315pt.
 
 
-[5.5]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[6.6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 
 
-[6.6 <./figs/workflow.png (PNG copy)>]
+[7.7 <./figs/workflow.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 73.
 
-Underfull \vbox (badness 3701) has occurred while \output is active []
 
 
-
-
-Overfull \hbox (9.57628pt too wide) in paragraph at lines 113--113
+Overfull \hbox (9.57628pt too wide) in paragraph at lines 114--114
 []|\T1/LinuxLibertineT-TLF/m/n/9 (-20) compensating_defense| 
  []
 
 
 
-[7.7]
-Overfull \hbox (1.06346pt too wide) in paragraph at lines 137--147
+[8.8]
+Overfull \hbox (1.06346pt too wide) in paragraph at lines 138--148
  [][] 
  []
 
@@ -1125,16 +1149,11 @@ Overfull \hbox (1.06346pt too wide) in paragraph at lines 137--147
 
 
 
-[8.8{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}]
+[9.9{d:/texlive/2025/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}]
 
 
-Overfull \hbox (2.13188pt too wide) in paragraph at lines 252--253
+Overfull \hbox (2.13188pt too wide) in paragraph at lines 253--254
 []|\T1/LinuxLibertineT-TLF/m/n/9 (-20) Interpretation| 
- []
-
-
-Underfull \hbox (badness 8189) in paragraph at lines 254--255
-[]|\T1/LinuxLibertineT-TLF/m/n/9 (+20) Almost per-
  []
 
 
@@ -1148,24 +1167,29 @@ Underfull \hbox (badness 8189) in paragraph at lines 256--257
  []
 
 
-Overfull \hbox (20.70404pt too wide) in paragraph at lines 250--262
+Underfull \hbox (badness 8189) in paragraph at lines 257--258
+[]|\T1/LinuxLibertineT-TLF/m/n/9 (+20) Almost per-
+ []
+
+
+Overfull \hbox (20.70404pt too wide) in paragraph at lines 251--263
  [][] 
  []
 
 
 
-[9.9]
-Underfull \hbox (badness 10000) in paragraph at lines 278--278
-[]|\T1/LinuxLibertineT-TLF/m/n/9 (+20) Endpoint-category agree-
+[10.10]
+Overfull \hbox (1.70718pt too wide) in paragraph at lines 267--268
+[]\T1/LinuxLibertineT-TLF/m/n/9 (-20) Second, we check the in-ter-nal con-sis-tency of the defense-category
  []
 
 
-Underfull \hbox (badness 5105) in paragraph at lines 279--279
+Underfull \hbox (badness 5105) in paragraph at lines 277--277
 []|\T1/LinuxLibertineT-TLF/m/n/9 (+20) Primary de-fense in-ter-nal
  []
 
 
-Overfull \hbox (5.88376pt too wide) in paragraph at lines 293--303
+Overfull \hbox (5.88376pt too wide) in paragraph at lines 291--299
  [][] 
  []
 
@@ -1173,7 +1197,7 @@ Overfull \hbox (5.88376pt too wide) in paragraph at lines 293--303
 
 ) (./eval.tex) (./discussion.tex) (./conclusion.tex) (./ack.tex Excluding 'acks' comment.) (./main.bbl
 
-[10.10]
+[11.11]
 LaTeX Info: Redefining \tempurl on input line 208.
 LaTeX Info: Redefining \tempurl on input line 219.
 LaTeX Info: Redefining \tempurl on input line 230.
@@ -1188,12 +1212,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--233
  []
 
 LaTeX Info: Redefining \tempurl on input line 250.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 LaTeX Info: Redefining \tempurl on input line 361.
+
+
 LaTeX Info: Redefining \tempurl on input line 380.
 LaTeX Info: Redefining \tempurl on input line 444.
 
@@ -1207,9 +1228,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--496
  []
 
 LaTeX Info: Redefining \tempurl on input line 504.
-
-
-[11.11]
 LaTeX Info: Redefining \tempurl on input line 540.
 
 Underfull \hbox (badness 1152) in paragraph at lines 536--543
@@ -1217,6 +1235,9 @@ Underfull \hbox (badness 1152) in paragraph at lines 536--543
  []
 
 LaTeX Info: Redefining \tempurl on input line 551.
+
+
+[12.12]
 LaTeX Info: Redefining \tempurl on input line 577.
 
 Underfull \hbox (badness 3690) in paragraph at lines 573--580
@@ -1253,27 +1274,27 @@ Overfull \vbox (1.60202pt too high) has occurred while \output is active []
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (d:/texlive/2025/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [12.12] (./main.aux)
+) [13.13] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DE8E831306281D86E58AFACB7115B326;5918.
+(rerunfilecheck)             Checksum: F769CD4D8D2E0F830B8A084DDC03B948;5938.
  ) 
 Here is how much of TeX's memory you used:
- 22643 strings out of 473190
- 367163 string characters out of 5719978
- 867615 words of memory out of 5000000
- 44677 multiletter control sequences out of 15000+600000
- 733898 words of font info for 452 fonts, out of 8000000 for 9000
+ 22658 strings out of 473190
+ 367536 string characters out of 5719978
+ 865889 words of memory out of 5000000
+ 44676 multiletter control sequences out of 15000+600000
+ 735399 words of font info for 463 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,17n,131p,1189b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,131p,1861b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/LibertineMathMI5.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 1463019 bytes).
+Output written on main.pdf (13 pages, 1461579 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 464 compressed objects within 5 object streams
+ 536 PDF objects out of 1000 (max. 8388607)
+ 484 compressed objects within 5 object streams
  121 named destinations out of 1000 (max. 500000)
  90862 words of extra memory for PDF output out of 106986 (max. 10000000)
 

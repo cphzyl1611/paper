@@ -12,9 +12,9 @@
 \subsection{Overview}
 \label{subsec:methodology-overview}
 
-This section describes how the proposed method turns APT playbooks and defense observations into scores that remain traceable after aggregation. The central requirement is traceability: a score should not be interpreted only as an aggregate number, but should remain connected to the playbook, stage, attack action, and first-failed victim-side control point that contributed to it.
+This section describes how the proposed method turns APT playbooks and defense observations into scores that remain traceable after aggregation. The central requirement is traceability: a score should not be interpreted only as an aggregate number, but should remain connected to the playbook, stage, attack action, and reference primary control-point attribution that contributed to it.
 
-Fig.~\ref{fig:methodology} gives the overall workflow. The workflow has three parts. First, benchmark construction converts raw playbook actions into scoring-ready records. Each action is assigned a control-point attribution, a canonical attack phase, expected defense categories, a confidence label, and stage aggregation semantics. These fields form the defense opportunity map used by the scoring engine.
+Fig.~\ref{fig:methodology} gives the overall workflow. The workflow has three parts. First, benchmark construction converts raw playbook actions into scoring-ready records. For attributed benchmark actions, it records a control-point attribution together with a canonical attack phase, expected defense categories, a confidence label, and stage aggregation semantics. These fields form the defense opportunity map used by the scoring engine.
 
 Second, defense scoring aligns observed defense results with the benchmark records. A tested system reports action-level outcomes, which are normalized into four hit levels: \texttt{PREVENTED}, \texttt{BLOCKED}, \texttt{DETECTED}, and \texttt{MISSED}. These hit levels capture whether the action was removed by design, interrupted at runtime, only observed, or missed.
 
@@ -22,17 +22,17 @@ Third, the scoring model aggregates the aligned hit values. The aggregation is s
 \subsection{Defensive Weakness Attribution}
 \label{subsec:defensive-weakness-attribution}
 
-The first step is to view each attack action from the defender's side. For every in-scope action, we identify the victim-side control point that failed first and is most relevant for repair. A control point may be a defensive mechanism, a configuration, a policy, or an operational process that can be evaluated and remediated independently. A successful attack action therefore indicates that some victim-side control was absent, misconfigured, bypassed, or insufficiently enforced.
+The first step is to view each attack action from the defender's side. For every in-scope action, we record a reference primary control-point attribution: a single victim-side control point associated with that action for repair-oriented reporting. A control point may be a defensive mechanism, a configuration, a policy, or an operational process that is treated as a distinct concern for evaluation and remediation. The attribution is assigned during benchmark construction, before any defense system is evaluated. It indicates where remediation would apply for that action; it does not record that the control failed in a particular evaluated-system run.
 
-This scope excludes actions that do not correspond to a directly repairable victim-side failure. Pre-compromise reconnaissance, attacker-side infrastructure preparation, and similar external prerequisite activities are retained for playbook completeness, but they are not included in primary weakness statistics or attribution-based scoring unless a concrete victim-side control failure can be identified.
+Not every playbook action corresponds to a directly repairable victim-side condition. Pre-compromise reconnaissance, attacker-side infrastructure preparation, and similar external prerequisite activities are retained for playbook completeness and are represented explicitly as external prerequisites, separately from ordinary victim-side cases.
 
-This attribution step is needed because an ATT\&CK label tells us what the attacker did, but not which defense failed. The same ATT\&CK technique may be enabled by different weaknesses in different environments. For example, a credential-related action may result from weak password policy, missing multi-factor authentication, exposed remote login services, insufficient credential storage protection, or successful phishing. These cases may share similar attack labels, but they imply different repair actions.
+This attribution step is needed because an ATT\&CK label describes what the attacker did, but does not by itself determine which victim-side control-point attribution should be associated with the action for repair-oriented analysis. Which control point is the appropriate reference depends on the context of the action and on the victim-side conditions the benchmark represents for it. Actions carrying the same attack label can therefore be associated with different control-point attributions, and the same attribution can be reached from different labels.
 
 We therefore interpret each action by asking a repair-oriented question: if only one control point could be fixed, which one would most directly prevent or disrupt this action? The answer is organized through a structured control-point schema. This schema is not organized as an attack sequence. It separates defensive failures along four design dimensions: security function, architectural location, defensive lifecycle phase, and trust source. These dimensions are not intended to form a strictly orthogonal category system. They are used as practical design constraints for separating control points that lead to different repair actions.
 
 Security function follows the long-standing view that protection mechanisms should be separated by their security roles, such as authentication, authorization, privilege separation, execution control, and data protection~\cite{saltzer1975}. Architectural location captures where the relevant trust boundary or enforcement point sits, which is consistent with zero-trust architecture's shift from static network perimeters toward users, assets, resources, and policy enforcement around them~\cite{nist800207}. Defensive lifecycle phase distinguishes controls that prevent an action from succeeding from controls that detect, respond to, or recover from successful actions, aligning with the preventive--reactive distinction in cyber defense modeling~\cite{zheng2018}. Trust source captures whether the failed control is tied to externally supplied inputs, such as phishing messages, malicious documents, third-party collaboration, or supply-chain artifacts; this is related to attack-surface models that treat entry points, channels, and untrusted data items as key resources through which attackers interact with a system~\cite{manadhata2011}.
 
-These dimensions also clarify why the nine domains are not arranged as an attack timeline. The domains describe different ways in which victim-side controls can fail, while the separate canonical phase layer captures when an action occurs in the attack chain. The schema contains nine top-level control-point domains and 94 fourth-level leaves. The domains indicate where score loss is concentrated, while the leaves identify the concrete controls that should be repaired.
+These dimensions also clarify why the nine domains are not arranged as an attack timeline. The domains describe different ways in which victim-side controls can fail, while the separate canonical phase layer captures when an action occurs in the attack chain. The schema contains nine top-level control-point domains and 97 active leaf-level control points; Table~\ref{tab:control-point-domains} summarizes the top-level domains. The domains indicate where score loss is concentrated, while the leaves provide concrete control-level references for remediation.
 
 \begin{table}[t]
 \centering
@@ -55,22 +55,22 @@ D9 & Availability and resilience failures \\
 \end{tabular}
 \end{table}
 
-Each in-scope action is assigned exactly one primary weakness leaf. This single-label rule keeps later scoring traceable. If one action had multiple primary attributions, the same failure could be counted several times, and score loss could not be linked to a clear remediation target. To keep attribution consistent, the schema uses explicit boundary rules and the repair-oriented decision principle described above.
+Each in-scope action is assigned exactly one primary weakness leaf. This single-label rule keeps later scoring traceable. If one action had multiple primary attributions, the same action could contribute several times, and score loss could not be linked to a clear remediation target. To keep attribution consistent, the schema uses explicit boundary rules and the repair-oriented decision principle described above.
 
 Some actions still involve more than one relevant weakness. Secondary weakness tags record such supporting conditions, including dual-control dependencies and entry--root-cause splits. These tags help explain attack chains, but they are not counted as primary attribution results and do not replace the primary leaf used for scoring.
 
-After this step, raw attack actions have been converted into repair-oriented control-point failures. This attributed action set is the basis for canonical phase assignment, defense opportunity mapping, and stage-aware scoring.
+After this step, raw attack actions have been converted into attributed benchmark records carrying reference primary control-point attributions. This attributed action set is the basis for canonical phase assignment, defense opportunity mapping, and stage-aware scoring.
 
 \subsection{Benchmark Construction}
 \label{subsec:benchmark-construction}
 
-Control-point attribution identifies which victim-side control point failed, but it is not enough for scoring by itself. The scoring engine also needs to know when the action occurs in the attack chain, which defense product categories are expected to address it, and how the action should be aggregated with other actions in the same stage. Benchmark construction adds this information without changing the primary attribution result.
+Control-point attribution identifies which victim-side control point the benchmark associates with an action, but it is not enough for scoring by itself. The scoring engine also needs to know when the action occurs in the attack chain, which defense product categories are expected to address it, and how the action should be aggregated with other actions in the same stage. Benchmark construction adds this information without changing the primary attribution result.
 
 The process has three parts. Attributed actions are first assigned canonical attack phases using ATT\&CK. Their control-point leaves are then linked to expected defense product categories. Finally, the enriched records are written into the defense opportunity map, which serves as the direct input to defense scoring.
 
 \subsubsection{Canonical Phase Assignment}
 
-The attribution domains describe where the victim-side defense failed; they deliberately do not encode when the action occurs in the attack chain. This temporal information is still needed for scoring and reporting. It allows the framework to distinguish defense performance across attack phases, apply phase-aware weights, and interpret stage-level results in relation to attacker progress. For example, interrupting an early action usually has more defensive value than observing a late action after the attacker has already progressed through several stages. We therefore add a separate canonical phase layer.
+The attribution domains describe which class of victim-side control is associated with an action; they deliberately do not encode when the action occurs in the attack chain. This temporal information is still needed for scoring and reporting. It allows the framework to distinguish defense performance across attack phases, apply phase-aware weights, and interpret stage-level results in relation to attacker progress. For example, interrupting an early action usually has more defensive value than observing a late action after the attacker has already progressed through several stages. We therefore add a separate canonical phase layer.
 
 For each action, the framework assigns a canonical phase based on its ATT\&CK technique. We use ATT\&CK Enterprise tactics as the standard phase vocabulary. Some ATT\&CK techniques can be associated with multiple tactics. We resolve this ambiguity using a predefined technique-to-phase mapping. Each technique is mapped to a single canonical phase before scoring, and this mapping remains fixed during defense scoring.
 
@@ -78,7 +78,7 @@ Stage-level phases are then derived from the action-level phases, for example by
 
 \subsubsection{Defense-Category Mapping}
 
-The primary weakness leaf identifies the failed control point. A scoring benchmark also needs to know which type of defense product should be expected to address that failure. For this purpose, we build a mapping from control-point leaves to defense product categories.
+The primary weakness leaf identifies the attributed control point. A scoring benchmark also needs to know which type of defense product should be expected to address that control point. For this purpose, we build a mapping from control-point leaves to defense product categories.
 
 Each fourth-level leaf is mapped to two sets of defense categories. The first set is the primary defense category set. It contains product types that should directly prevent or block the corresponding weakness if deployed and configured correctly. The second set is the compensating defense category set. It contains product types that may detect, mitigate, or partially compensate for the weakness, but are not the most direct repair target.
 
@@ -106,8 +106,9 @@ Field & Meaning \\
 \hline
 playbook, stage, action & Identifier of the attack action in the playbook \\
 attack\_id & ATT\&CK technique or sub-technique identifier \\
-primary\_leaf & First-failed control-point leaf used for primary attribution \\
-primary\_domain & Top-level control-point domain of the primary leaf \\
+primary\_leaf & Reference primary control-point leaf \\
+primary\_l1 & Top-level control-point domain of the primary leaf \\
+secondary\_leaves & Contextual secondary annotations; not scored as primary attributions \\
 canonical\_phase & Standard attack phase used for phase-aware scoring \\
 primary\_defense & Product categories expected to directly address the weakness \\
 compensating\_defense & Product categories that may provide secondary detection or mitigation \\
@@ -117,7 +118,7 @@ stage\_logic & Aggregation semantics used later at the stage level \\
 \end{tabular}
 \end{table}
 
-Through these steps, benchmark construction turns attributed attack actions into structured defense opportunities. The resulting records connect four pieces of information required for scoring: what the attacker did, which victim-side control point first failed, which defense categories were expected to cover the action, and how the action should contribute to stage-level aggregation.
+Through these steps, benchmark construction turns attributed attack actions into structured defense opportunities. The resulting records connect four pieces of information required for scoring: what the attacker did, which control point the benchmark attributes to the action, which defense categories were expected to cover the action, and how the action should contribute to stage-level aggregation.
 
 \subsection{Defense Result Alignment}
 \label{subsec:defense-result-alignment}
@@ -126,9 +127,9 @@ Defense scoring starts by aligning the evaluated system's observations with the 
 
 We represent the defense observation trace as a set of action-level records. Each record contains the playbook identifier, the stage number, the action field used in the benchmark, and the observed result. Each defense observation is matched to the action record in the defense opportunity map with the same playbook identifier, stage number, and action field. After alignment, the observed result is associated with the action's control-point attribution, canonical phase, expected defense categories, confidence label, and stage aggregation semantics.
 
-Actions without a matched defense observation are treated as missed actions. Under this rule, an action receives a positive hit value only when the evaluated defense system reports that it was prevented, blocked, or detected. Otherwise, the action is treated as \texttt{MISSED}. It also keeps the benchmark comparable across different defense systems: every system is evaluated against the same set of benchmark actions, and missing observations are interpreted as lack of demonstrated coverage.
+For an in-scope action that has been validly exercised, the absence of a matched defense observation is normalized as \texttt{MISSED}. Under this rule, such an action receives a positive hit value only when the evaluated defense system reports that it was prevented, blocked, or detected. Actions that could not be validly exercised---because the environment does not support them, because the execution attempt was invalid, or because the case is otherwise not assessable---are handled as a question of evaluation scope and are not assigned a defense outcome. Restricting the default in this way keeps the benchmark comparable across different defense systems: every system is evaluated against the same set of in-scope actions, and missing observations within that set are interpreted as lack of demonstrated coverage.
 
-Each matched observation is then converted into one of four hit levels. \texttt{PREVENTED} denotes architectural prevention, where the attack path is removed before the action can be attempted. \texttt{BLOCKED} denotes real-time interruption, where the action is attempted but stopped by the defense system. \texttt{DETECTED} denotes successful observation or alerting without stopping the action itself. \texttt{MISSED} denotes the absence of prevention, blocking, or detection. These levels are mapped to numerical hit values used by the scoring model.
+Each matched observation is then converted into one of four hit levels. \texttt{PREVENTED} denotes architectural prevention, where the attack path is removed before the action can be attempted. \texttt{BLOCKED} denotes real-time interruption, where the action is attempted but stopped by the defense system. \texttt{DETECTED} denotes successful observation or alerting without stopping the action itself. \texttt{MISSED} denotes the absence of prevention, blocking, or detection. These levels are mapped to numerical hit values used by the scoring model, as summarized in Table~\ref{tab:hit-levels}.
 
 \begin{table}[t]
 \centering
@@ -162,7 +163,7 @@ The action weight $w(a)$ is defined as
 w(a) =
 W_{\mathrm{phase}}(\phi(a)) \cdot C_{\mathrm{conf}}(\gamma(a)),
 \]
-where $\phi(a)$ is the canonical phase assigned to action $a$, $W_{\mathrm{phase}}$ is the phase-weight function, $\gamma(a)$ is the attribution confidence label, and $C_{\mathrm{conf}}$ is the confidence factor. In our benchmark, the confidence factor reduces the contribution of actions whose attribution is less certain. For example, high-, medium-, and low-confidence actions can be assigned factors of $1.0$, $0.8$, and $0.5$, respectively.
+where $\phi(a)$ is the canonical phase assigned to action $a$, $W_{\mathrm{phase}}$ is the phase-weight function, $\gamma(a)$ is the attribution confidence label, and $C_{\mathrm{conf}}$ is the confidence factor. In our benchmark, the confidence factor reduces the contribution of actions whose attribution is less certain. The implemented factors are $1.0$ for high-, $0.8$ for medium-, and $0.5$ for low-confidence attributions.
 
 For a playbook stage $s$, let $A_s$ be the set of actions in that stage. The stage score $S_s$ is computed according to the aggregation semantics of the stage. We use three aggregation types: OR, AND, and Cluster.
 
@@ -206,7 +207,7 @@ The overall defense capability score is then computed by aggregating the scores 
 \]
 where $\mathcal{P}$ denotes the set of playbooks in the benchmark.
 
-This formulation keeps the final score traceable: a score loss can be traced back from the overall score to a playbook, then to a stage, and finally to the individual actions and control-point failures that caused the loss.
+This formulation keeps the final score traceable: a score loss can be traced back from the overall score to a playbook, then to a stage, and finally to the individual actions and their attributed control points that account for the loss.
 
 \subsection{Multi-Dimensional Score Outputs}
 \label{subsec:multi-dimensional-outputs}
@@ -215,7 +216,7 @@ The overall score is useful, but it is only a starting point. Two defense system
 
 The phase-wise score groups results by canonical attack phase. This view answers the question: at which attack phases does the defense system lose the most score? Since the scoring model assigns higher value to earlier interception, phase-wise results help distinguish early-stage blocking from late-stage observation. This directly supports stage-aware analysis of APT defense capability.
 
-The control-point domain score groups results by the primary victim-side control-point domain. This view answers a different question: which type of defensive control fails most often or contributes most to score loss? For example, a low score in an identity-related domain points to weaknesses in credential and trust controls, while a low score in an observability-related domain indicates insufficient detection or response. This decomposition turns an aggregate score into repair-oriented feedback.
+The control-point domain score groups results by the primary victim-side control-point domain. This view answers a different question: which control-point domain accounts for the most score loss? For example, a low score in an identity-related domain points to weaknesses in credential and trust controls, while a low score in an observability-related domain indicates insufficient detection or response. This decomposition turns an aggregate score into repair-oriented feedback.
 
 The product category score evaluates performance within the expected coverage of each defense product category. For a product category $c$, let $A_c$ denote the set of actions whose defense opportunity records include $c$ as a primary or compensating defense category. The coverage of $c$ is the fraction of benchmark actions that fall into this expected coverage set:
 \[
@@ -227,21 +228,21 @@ where $\mathcal{A}$ is the set of benchmark actions.
 The hit rate of $c$ is computed only within its coverage set:
 \[
 \mathrm{HitRate}(c) =
-\frac{\sum_{a \in A_c} \tilde{h}_c(a)}
+\frac{\sum_{a \in A_c} h(a)}
      {|A_c|}.
 \]
-Here, $\tilde{h}_c(a)$ is the hit value credited to category $c$. Primary defense matches receive full hit credit, while compensating defense matches may receive discounted credit because they detect or mitigate a weakness but do not directly eliminate the failed control point.
+Every action in the coverage set contributes its observed hit value $h(a)$; the main score does not apply a separate numerical credit to primary and compensating matches. The primary/compensating distinction is retained as crosswalk context describing how directly a category relates to the attributed control point.
 
 Reporting both coverage and hit rate is important. Coverage describes how much of the benchmark a product category is expected to address. Hit rate describes how well it performs within that expected scope. A product with narrow coverage but high hit rate has a different defense profile from a product with broad coverage but low hit rate, even if their aggregate scores are similar.
 
-Finally, the framework produces an action-level attribution report. For each score loss, the report retains the playbook, stage, action, ATT\&CK technique, canonical phase, primary control-point leaf, defense categories, and observed result. This report provides the trace from aggregate score back to concrete attack actions and failed control points. As a result, the output can support both high-level comparison and detailed remediation analysis.
+Finally, the framework produces an action-level attribution report. For each score loss, the report retains the playbook, stage, action, ATT\&CK technique, canonical phase, primary control-point leaf, defense categories, and observed result. This report provides the trace from aggregate score back to concrete attack actions and their attributed control points. As a result, the output can support both high-level comparison and detailed remediation analysis.
 
 \subsection{Prototype Method Validation}
 \label{subsec:prototype-method-validation}
 
 The preceding subsections define the attribution schema, benchmark construction process, result alignment procedure, scoring model, and multi-dimensional outputs. Before applying the framework to real defense-system replay experiments, we perform a set of prototype validation experiments on the benchmark and scoring infrastructure. These experiments test whether the proposed methodological components are reproducible, whether the control-point--to--defense mapping is reasonable, and whether the scoring engine behaves correctly under boundary and parameter-variation cases.
 
-First, we evaluate the reproducibility of defensive weakness attribution through a pilot inter-rater reliability study. A stratified sample of 50 ATT\&CK techniques and sub-techniques was independently labeled by two annotators using the same coding guide. Agreement was measured at multiple levels, including scope decision, top-level domain, leaf-level attribution, confidence label, mapping method, and secondary weakness tag. Table~\ref{tab:method-irr} summarizes the results.
+First, we assess the reproducibility of the attribution coding scheme through a pilot inter-rater reliability study. A stratified sample of 50 ATT\&CK techniques and sub-techniques was independently labeled by two large language model annotators, GPT-4o and Gemini, working from the same coding guide. The pilot was run in the Technique Mapping usage mode, in which the unit of annotation is an ATT\&CK technique rather than a playbook action; the separate Incident Chain usage mode used for production playbook annotation was not exercised. Agreement was measured over the coding-guide dimensions: scope decision, top-level domain, leaf-level attribution, confidence label, mapping method, and secondary weakness tag. Mapping method records how an attribution was reached---by explicit rule, inheritance, nearest neighbor, or external prerequisite---and is a different construct from usage mode, which records the unit of annotation. Table~\ref{tab:method-irr} summarizes the results.
 
 \begin{table}[t]
 \centering
@@ -261,9 +262,9 @@ Secondary tag & 66.0\% & 0.173 & Slight \\
 \end{tabular}
 \end{table}
 
-The result shows that the primary attribution levels are reproducible in the pilot setting. The high agreement at the L1 and L4 levels indicates that the main control-point attribution can be applied consistently. In contrast, the secondary tag has much lower agreement, so it is retained as qualitative chain-context information rather than as a primary quantitative scoring field.
+These figures are preliminary evidence that the coding scheme itself is reproducible: agreement at the top-level domain and leaf levels indicates that the main control-point attribution can be applied consistently by independent annotators working from the guide. Three limits bound this evidence. The pilot predates the current v3.5 schema boundary, so it does not validate leaves that were added or revised afterwards. Both annotators were language models, so the study measures coding-scheme reproducibility rather than human inter-rater reliability. And the unit of annotation was an ATT\&CK technique, so the pilot does not validate the production playbook action annotations or the Incident Chain annotations derived from them. The secondary tag in particular reaches only slight agreement ($\kappa=0.173$); secondary tags are therefore retained as qualitative contextual information and are not used as primary quantitative validation.
 
-Second, we validate the defense-category mapping used by the Defense--Tech Crosswalk. The external validity check compares the crosswalk categories with the dataset's native control labels. Among 1,733 comparable actions, the two sources agree on 1,297 actions, giving an agreement rate of 74.8\%. We also perform an internal consistency check in which an independent annotator maps a stratified sample of 35 leaves to the 29 defense categories without seeing the existing crosswalk. Table~\ref{tab:method-crosswalk-validation} summarizes these checks.
+Second, we check the internal consistency of the defense-category mapping used by the Defense--Tech Crosswalk. An independent annotator mapped a stratified sample of 35 of the 97 active leaves to the 29 defense categories without seeing the existing crosswalk. Table~\ref{tab:method-crosswalk-validation} summarizes the result. This check covers roughly one third of the active leaves and is not a validation of the crosswalk as a whole.
 
 \begin{table}[t]
 \centering
@@ -273,18 +274,15 @@ Second, we validate the defense-category mapping used by the Defense--Tech Cross
 \hline
 Validation item & Result \\
 \hline
-External agreement with native control labels & 74.8\% (1,297 / 1,733 actions) \\
-Highest category agreement & DLP 96.4\%, NET 93.6\%, EGW 90.3\% \\
-Endpoint-category agreement & AV 73.5\%, EDR 71.9\% \\
-Primary defense internal agreement & 97.1\% (34 / 35 leaves), $\kappa=0.485$ \\
-Compensating defense internal agreement & 45.7\% (16 / 35 leaves), $\kappa=-0.094$ \\
+Primary defense internal agreement & 97.1\% (34 / 35 sampled leaves), $\kappa=0.485$ \\
+Compensating defense internal agreement & 45.7\% (16 / 35 sampled leaves), $\kappa=-0.094$ \\
 \hline
 \end{tabular}
 \end{table}
 
-These results suggest that the primary defense mapping is stable enough to support product-category scoring. The lower consistency for compensating defenses indicates that compensating coverage is less sharply defined than primary coverage. Therefore, compensating matches are treated as partial credit and should be interpreted more cautiously.
+Within the sampled leaves, the primary defense mapping is the more consistent of the two. Compensating-defense assignments show agreement no better than chance ($\kappa=-0.094$), indicating that compensating coverage is not sharply defined. Compensating mappings are therefore reported as descriptive crosswalk context only; they do not carry a separate numerical weight in the main score.
 
-Third, we check the mathematical behavior of the scoring model using synthetic coverage traces. These traces are not real defense experiments; they are boundary and coverage simulations. A perfect-defense trace assigns \texttt{PREVENTED} to every benchmark action, and a no-defense trace assigns \texttt{MISSED} to every action. Two idealized product-category traces simulate systems that block all actions in their expected EDR or NGFW/NET primary coverage. Table~\ref{tab:method-coverage-simulation} reports the resulting scores.
+Third, we check the mathematical behavior of the scoring model using synthetic traces. These traces are not defense experiments; they are boundary checks on the scoring engine. A perfect-defense trace assigns \texttt{PREVENTED} to every benchmark action, and a no-defense trace assigns \texttt{MISSED} to every action. Table~\ref{tab:method-coverage-simulation} reports the resulting scores.
 
 \begin{table}[t]
 \centering
@@ -296,33 +294,13 @@ Simulation & Configuration & Score \\
 \hline
 Perfect & All actions are \texttt{PREVENTED} & 100.00 \\
 None & All actions are \texttt{MISSED} & 0.00 \\
-Ideal EDR & EDR primary coverage $\rightarrow$ \texttt{BLOCKED} & 44.40 \\
-Ideal NGFW & NGFW/NET primary coverage $\rightarrow$ \texttt{BLOCKED} & 24.93 \\
 \hline
 \end{tabular}
 \end{table}
 
-The perfect and none traces verify the expected upper and lower bounds of the scoring engine. The ideal EDR and ideal NGFW simulations show that a single product category cannot cover the whole benchmark even when it performs perfectly within its expected scope. This result reflects the multi-stage and multi-control nature of APT defense rather than the performance of a specific commercial product.
+The perfect and none traces verify the expected upper and lower bounds of the scoring engine: a fully preventing trace scores 100 and a fully missing trace scores 0 under the aggregation rules defined above. Idealized single-category traces, which assign a blocking outcome only within one product category's expected primary coverage, are structural applicability constructions rather than measurements of any deployed product; we therefore do not report them here as current results and do not treat them as evidence about commercial defense performance.
 
-Finally, we test the robustness of the scoring results under reasonable parameter and aggregation variations. We vary phase weights, confidence factors, and compensating-defense discounts, and we also compare alternative aggregation choices for discovery-heavy Cluster stages and playbook-level aggregation. Table~\ref{tab:method-robustness} summarizes the main results.
+We do not report a quantitative sensitivity analysis at this stage. The scoring model exposes three tunable elements---the phase-weight schedule, the confidence factors, and the stage-level aggregation choice---and their effect on reported scores is examined together with the evaluation results, so that the reported ranges correspond to the population actually scored.
 
-\begin{table}[t]
-\centering
-\caption{Sensitivity and aggregation robustness checks.}
-\label{tab:method-robustness}
-\begin{tabular}{p{0.45\columnwidth}p{0.43\columnwidth}}
-\hline
-Check & Result \\
-\hline
-Perfect / none under all parameter settings & 100 / 0 in all configurations \\
-EDR score range & 43.41--46.67 \\
-NGFW score range & 23.62--27.57 \\
-EDR/NGFW ratio range & 1.57--1.94 \\
-Discovery-dominated Cluster alternative & Maximum score delta 1.07 \\
-Action-count weighted playbook aggregation & Maximum score delta 0.78 \\
-\hline
-\end{tabular}
-\end{table}
-
-The sensitivity analysis shows that the boundary behavior of the scoring model remains stable across parameter settings, and the relative ordering between the idealized EDR and NGFW traces does not change. The aggregation robustness checks also show limited score variation under alternative but reasonable aggregation choices. These results support the use of the proposed scoring model as a stable prototype benchmark infrastructure. The later evaluation section will use real defense-system observations to test how deployed defenses perform under this methodology.
+The later evaluation section will use real defense-system observations to test how deployed defenses perform under this methodology.
 

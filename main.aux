@@ -5,8 +5,16 @@
 \citation{mandiant2026mtrends}
 \citation{verizon2025dbir}
 \citation{ibm2024costdatabreach}
+\citation{mitreAttack}
 \citation{mitreAttackEvaluations}
-\citation{mell2007common,wang2007measuring,erola2022system}
+\citation{virkud2024endpoint}
+\citation{jiang2025orthrus,goyal2024rcaid}
+\citation{mitreCTIDMappings,kaloroumakis2021d3fend}
+\citation{sheyner2002attackgraphs,wang2007measuring}
+\citation{mell2007common,erola2022system}
+\citation{shen2024decoding}
+\citation{iannacone2020quantifiable,zaffarano2015mtd,liu2023defia}
+\citation{verendel2009quantified,vanderkouwe2019benchmarkingflaws}
 \@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \citation{mitreAttack}
@@ -16,6 +24,10 @@
 \citation{rosso2022saibersoc}
 \citation{cao2016replay}
 \citation{enoch2022cdgee}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related-work}{{2}{2}{Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Attack Knowledge Bases, Adversary Emulation, and Defense Benchmark Construction}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{subsec:rw-emulation-benchmark}{{2.1}{2}{Attack Knowledge Bases, Adversary Emulation, and Defense Benchmark Construction}{subsection.2.1}{}}
 \citation{mitreD3FEND,kaloroumakis2021d3fend}
 \citation{mitreCTIDMappings}
 \citation{inam2023sokprovenance}
@@ -29,18 +41,17 @@
 \citation{liao2016ioc}
 \citation{shen2019attack2vec}
 \citation{li2019tealeaves}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
-\newlabel{sec:related-work}{{2}{2}{Related Work}{section.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Attack Knowledge Bases, Adversary Emulation, and Defense Benchmark Construction}{2}{subsection.2.1}\protected@file@percent }
-\newlabel{subsec:rw-emulation-benchmark}{{2.1}{2}{Attack Knowledge Bases, Adversary Emulation, and Defense Benchmark Construction}{subsection.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}ATT\&CK-Based Coverage and Evaluation Reinterpretation}{2}{subsection.2.2}\protected@file@percent }
-\newlabel{subsec:rw-attck-coverage}{{2.2}{2}{ATT\&CK-Based Coverage and Evaluation Reinterpretation}{subsection.2.2}{}}
 \citation{iannacone2020quantifiable}
 \citation{butler2002saem,gordon2002economics}
 \citation{liu2023defia}
-\citation{zaffarano2015mtd,taylor2016mtd}
+\citation{zaffarano2015mtd}
+\citation{taylor2016mtd}
 \citation{garcia2014botnet}
 \citation{doupe2011hitem,werther2011ctf}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}ATT\&CK-Based Coverage and Evaluation Reinterpretation}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{subsec:rw-attck-coverage}{{2.2}{3}{ATT\&CK-Based Coverage and Evaluation Reinterpretation}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Defense Capability and Effectiveness Scoring}{3}{subsection.2.3}\protected@file@percent }
+\newlabel{subsec:rw-scoring}{{2.3}{3}{Defense Capability and Effectiveness Scoring}{subsection.2.3}{}}
 \citation{dong2023arewethereyet}
 \citation{mell2007common,first2019cvss31}
 \citation{sheyner2002attackgraphs}
@@ -49,9 +60,12 @@
 \citation{wang2014kzero}
 \citation{zhang2016networkdiversity}
 \citation{leversage2008mttc}
+\citation{wang2007measuring}
+\citation{erola2022system}
 \citation{outkin2019gpladd}
 \citation{outkin2022defender}
-\citation{noel2003hardening,wang2006hardening}
+\citation{noel2003hardening}
+\citation{wang2006hardening}
 \citation{jiang2025orthrus}
 \citation{goyal2024rcaid}
 \citation{bilot2025simpler}
@@ -61,60 +75,56 @@
 \citation{herley2017science}
 \citation{vanderkouwe2019benchmarkingflaws}
 \citation{olszewski2025replicability}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Defense Capability and Effectiveness Scoring}{3}{subsection.2.3}\protected@file@percent }
-\newlabel{subsec:rw-scoring}{{2.3}{3}{Defense Capability and Effectiveness Scoring}{subsection.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Multi-Stage Evaluation, Attack-Path Reasoning, and Repair Prioritization}{3}{subsection.2.4}\protected@file@percent }
-\newlabel{subsec:rw-multistage-repair}{{2.4}{3}{Multi-Stage Evaluation, Attack-Path Reasoning, and Repair Prioritization}{subsection.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Evaluation Validity, Reproducibility, and Operational Evidence}{3}{subsection.2.5}\protected@file@percent }
-\newlabel{subsec:rw-validity}{{2.5}{3}{Evaluation Validity, Reproducibility, and Operational Evidence}{subsection.2.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Positioning by evidence, unit of analysis, output, and remediation traceability.}}{4}{table.caption.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Multi-Stage Evaluation, Attack-Path Reasoning, and Repair Prioritization}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{subsec:rw-multistage-repair}{{2.4}{4}{Multi-Stage Evaluation, Attack-Path Reasoning, and Repair Prioritization}{subsection.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Evaluation Validity, Reproducibility, and Operational Evidence}{4}{subsection.2.5}\protected@file@percent }
+\newlabel{subsec:rw-validity}{{2.5}{4}{Evaluation Validity, Reproducibility, and Operational Evidence}{subsection.2.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Positioning by evidence, unit of analysis, output, and remediation traceability. Rows group research lines by the question each answers; the grouping does not indicate competitor class.}}{5}{table.caption.5}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:related-work-position}{{1}{4}{Positioning by evidence, unit of analysis, output, and remediation traceability}{table.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Synthesis and Positioning}{4}{subsection.2.6}\protected@file@percent }
-\newlabel{subsec:rw-position}{{2.6}{4}{Synthesis and Positioning}{subsection.2.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Background and Problem Statement}{4}{section.3}\protected@file@percent }
-\newlabel{sec:background}{{3}{4}{Background and Problem Statement}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}APT Playbooks, Actions, and Stages}{4}{subsection.3.1}\protected@file@percent }
-\newlabel{subsec:apt-playbooks-actions-stages}{{3.1}{4}{APT Playbooks, Actions, and Stages}{subsection.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Defense Observations and Evaluation Outcomes}{4}{subsection.3.2}\protected@file@percent }
-\newlabel{subsec:defense-observations-outcomes}{{3.2}{4}{Defense Observations and Evaluation Outcomes}{subsection.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}From Attack Behavior to Control-Point Failure}{5}{subsection.3.3}\protected@file@percent }
-\newlabel{subsec:attack-behavior-control-point-failure}{{3.3}{5}{From Attack Behavior to Control-Point Failure}{subsection.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Problem Statement}{5}{subsection.3.4}\protected@file@percent }
-\newlabel{subsec:problem-statement}{{3.4}{5}{Problem Statement}{subsection.3.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{5}{section.4}\protected@file@percent }
-\newlabel{sec:methodology}{{4}{5}{Methodology}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Overview}{5}{subsection.4.1}\protected@file@percent }
-\newlabel{subsec:methodology-overview}{{4.1}{5}{Overview}{subsection.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Defensive Weakness Attribution}{5}{subsection.4.2}\protected@file@percent }
-\newlabel{subsec:defensive-weakness-attribution}{{4.2}{5}{Defensive Weakness Attribution}{subsection.4.2}{}}
+\newlabel{tab:related-work-position}{{1}{5}{Positioning by evidence, unit of analysis, output, and remediation traceability. Rows group research lines by the question each answers; the grouping does not indicate competitor class}{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Synthesis and Positioning}{5}{subsection.2.6}\protected@file@percent }
+\newlabel{subsec:rw-position}{{2.6}{5}{Synthesis and Positioning}{subsection.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Background and Problem Statement}{5}{section.3}\protected@file@percent }
+\newlabel{sec:background}{{3}{5}{Background and Problem Statement}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}APT Playbooks, Actions, and Stages}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{subsec:apt-playbooks-actions-stages}{{3.1}{5}{APT Playbooks, Actions, and Stages}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Defense Observations and Evaluation Outcomes}{5}{subsection.3.2}\protected@file@percent }
+\newlabel{subsec:defense-observations-outcomes}{{3.2}{5}{Defense Observations and Evaluation Outcomes}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}From Attack Behavior to Control-Point Attribution}{6}{subsection.3.3}\protected@file@percent }
+\newlabel{subsec:attack-behavior-control-point-failure}{{3.3}{6}{From Attack Behavior to Control-Point Attribution}{subsection.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Problem Statement}{6}{subsection.3.4}\protected@file@percent }
+\newlabel{subsec:problem-statement}{{3.4}{6}{Problem Statement}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Methodology}{6}{section.4}\protected@file@percent }
+\newlabel{sec:methodology}{{4}{6}{Methodology}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Overview}{6}{subsection.4.1}\protected@file@percent }
+\newlabel{subsec:methodology-overview}{{4.1}{6}{Overview}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Defensive Weakness Attribution}{6}{subsection.4.2}\protected@file@percent }
+\newlabel{subsec:defensive-weakness-attribution}{{4.2}{6}{Defensive Weakness Attribution}{subsection.4.2}{}}
 \citation{saltzer1975}
 \citation{nist800207}
 \citation{zheng2018}
 \citation{manadhata2011}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Workflow of the APT defense capability scoring framework.}}{6}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:methodology}{{1}{6}{Workflow of the APT defense capability scoring framework}{figure.caption.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Top-level control-point domains.}}{6}{table.caption.7}\protected@file@percent }
-\newlabel{tab:control-point-domains}{{2}{6}{Top-level control-point domains}{table.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Workflow of the APT defense capability scoring framework.}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:methodology}{{1}{7}{Workflow of the APT defense capability scoring framework}{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Top-level control-point domains.}}{7}{table.caption.7}\protected@file@percent }
+\newlabel{tab:control-point-domains}{{2}{7}{Top-level control-point domains}{table.caption.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Benchmark Construction}{7}{subsection.4.3}\protected@file@percent }
 \newlabel{subsec:benchmark-construction}{{4.3}{7}{Benchmark Construction}{subsection.4.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Canonical Phase Assignment}{7}{subsubsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Defense-Category Mapping}{7}{subsubsection.4.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Defense Opportunity Map}{7}{subsubsection.4.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Defense Result Alignment}{7}{subsection.4.4}\protected@file@percent }
-\newlabel{subsec:defense-result-alignment}{{4.4}{7}{Defense Result Alignment}{subsection.4.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Canonical Phase Assignment}{8}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Defense-Category Mapping}{8}{subsubsection.4.3.2}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Main fields in a defense opportunity record.}}{8}{table.caption.8}\protected@file@percent }
 \newlabel{tab:opportunity-record-fields}{{3}{8}{Main fields in a defense opportunity record}{table.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Defense observation results and hit values.}}{8}{table.caption.9}\protected@file@percent }
-\newlabel{tab:hit-levels}{{4}{8}{Defense observation results and hit values}{table.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Stage-Aware Scoring Model}{8}{subsection.4.5}\protected@file@percent }
-\newlabel{subsec:stage-aware-scoring}{{4.5}{8}{Stage-Aware Scoring Model}{subsection.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Multi-Dimensional Score Outputs}{9}{subsection.4.6}\protected@file@percent }
-\newlabel{subsec:multi-dimensional-outputs}{{4.6}{9}{Multi-Dimensional Score Outputs}{subsection.4.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Prototype validation of defensive weakness attribution.}}{9}{table.caption.10}\protected@file@percent }
-\newlabel{tab:method-irr}{{5}{9}{Prototype validation of defensive weakness attribution}{table.caption.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Prototype Method Validation}{9}{subsection.4.7}\protected@file@percent }
-\newlabel{subsec:prototype-method-validation}{{4.7}{9}{Prototype Method Validation}{subsection.4.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}Defense Opportunity Map}{8}{subsubsection.4.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Defense observation results and hit values.}}{9}{table.caption.9}\protected@file@percent }
+\newlabel{tab:hit-levels}{{4}{9}{Defense observation results and hit values}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Defense Result Alignment}{9}{subsection.4.4}\protected@file@percent }
+\newlabel{subsec:defense-result-alignment}{{4.4}{9}{Defense Result Alignment}{subsection.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Stage-Aware Scoring Model}{9}{subsection.4.5}\protected@file@percent }
+\newlabel{subsec:stage-aware-scoring}{{4.5}{9}{Stage-Aware Scoring Model}{subsection.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Multi-Dimensional Score Outputs}{10}{subsection.4.6}\protected@file@percent }
+\newlabel{subsec:multi-dimensional-outputs}{{4.6}{10}{Multi-Dimensional Score Outputs}{subsection.4.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Prototype Method Validation}{10}{subsection.4.7}\protected@file@percent }
+\newlabel{subsec:prototype-method-validation}{{4.7}{10}{Prototype Method Validation}{subsection.4.7}{}}
 \bibstyle{ACM-Reference-Format}
 \bibdata{cition.bib}
 \bibcite{axelsson2000baserate}{{1}{2000}{{Axelsson}}{{}}}
@@ -124,25 +134,25 @@
 \bibcite{casado2006sane}{{5}{2006}{{Casado et~al\mbox  {.}}}{{}}}
 \bibcite{cheng2024kairos}{{6}{2024}{{Cheng et~al\mbox  {.}}}{{}}}
 \bibcite{dong2023arewethereyet}{{7}{2023}{{Dong et~al\mbox  {.}}}{{}}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Prototype validation of defense-category mapping.}}{10}{table.caption.11}\protected@file@percent }
-\newlabel{tab:method-crosswalk-validation}{{6}{10}{Prototype validation of defense-category mapping}{table.caption.11}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Prototype scoring checks with synthetic coverage traces.}}{10}{table.caption.12}\protected@file@percent }
-\newlabel{tab:method-coverage-simulation}{{7}{10}{Prototype scoring checks with synthetic coverage traces}{table.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Sensitivity and aggregation robustness checks.}}{10}{table.caption.13}\protected@file@percent }
-\newlabel{tab:method-robustness}{{8}{10}{Sensitivity and aggregation robustness checks}{table.caption.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation}{10}{section.5}\protected@file@percent }
-\newlabel{sec:eval}{{5}{10}{Evaluation}{section.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{10}{section.6}\protected@file@percent }
-\newlabel{sec:discussion}{{6}{10}{Discussion}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}\protected@file@percent }
-\newlabel{sec:conclusion}{{7}{10}{Conclusion}{section.7}{}}
-\@writefile{toc}{\contentsline {section}{References}{10}{section*.15}\protected@file@percent }
 \bibcite{doupe2011hitem}{{8}{2011}{{Doup{\'e} et~al\mbox  {.}}}{{}}}
 \bibcite{enoch2022cdgee}{{9}{2022}{{Enoch et~al\mbox  {.}}}{{}}}
 \bibcite{erola2022system}{{10}{2022}{{Erola et~al\mbox  {.}}}{{}}}
 \bibcite{first2019cvss31}{{11}{2019}{{FIRST}}{{}}}
 \bibcite{garcia2014botnet}{{12}{2014}{{Garcia et~al\mbox  {.}}}{{}}}
 \bibcite{mandiant2026mtrends}{{13}{2026}{{Google Cloud Mandiant}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Prototype validation of defensive weakness attribution.}}{11}{table.caption.10}\protected@file@percent }
+\newlabel{tab:method-irr}{{5}{11}{Prototype validation of defensive weakness attribution}{table.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Prototype validation of defense-category mapping.}}{11}{table.caption.11}\protected@file@percent }
+\newlabel{tab:method-crosswalk-validation}{{6}{11}{Prototype validation of defense-category mapping}{table.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Prototype scoring checks with synthetic coverage traces.}}{11}{table.caption.12}\protected@file@percent }
+\newlabel{tab:method-coverage-simulation}{{7}{11}{Prototype scoring checks with synthetic coverage traces}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Evaluation}{11}{section.5}\protected@file@percent }
+\newlabel{sec:eval}{{5}{11}{Evaluation}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{11}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{11}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{11}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{7}{11}{Conclusion}{section.7}{}}
+\@writefile{toc}{\contentsline {section}{References}{11}{section*.14}\protected@file@percent }
 \bibcite{gordon2002economics}{{14}{2002}{{Gordon and Loeb}}{{}}}
 \bibcite{goyal2024rcaid}{{15}{2024}{{Goyal et~al\mbox  {.}}}{{}}}
 \bibcite{herley2017science}{{16}{2017}{{Herley and van Oorschot}}{{}}}
@@ -199,6 +209,6 @@
 \newlabel{tocindent3}{19.899pt}
 \newlabel{tocindent4}{0pt}
 \newlabel{tocindent5}{0pt}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix}{12}{appendix.A}\protected@file@percent }
-\newlabel{TotPages}{{12}{12}{}{page.12}{}}
-\gdef \@abspage@last{12}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix}{13}{appendix.A}\protected@file@percent }
+\newlabel{TotPages}{{13}{13}{}{page.13}{}}
+\gdef \@abspage@last{13}

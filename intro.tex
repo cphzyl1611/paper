@@ -1,25 +1,113 @@
 \section{Introduction}
 
-Advanced Persistent Threats (APTs) have become a major threat to national, enterprise, and critical-infrastructure cybersecurity. According to M-Trends 2026, the global median dwell time rose to 14 days in 2025, while the median dwell time for cyber-espionage intrusions reached 122 days\cite{mandiant2026mtrends}. Verizon DBIR 2025 reports that credential abuse and vulnerability exploitation remain major initial attack vectors, and that the share of breaches involving third parties doubled to 30\%\cite{verizon2025dbir}. IBM's 2024 Cost of a Data Breach report further shows that the global average cost of a data breach reached \$4.88 million, and that about 70\% of affected organizations experienced significant or moderate business disruption\cite{ibm2024costdatabreach}. Taken together, these reports suggest that APT defense evaluation should focus not only on whether an intrusion is eventually found, but also on where defensive control is lost during a multi-stage campaign.
+Advanced Persistent Threat (APT) campaigns unfold as multi-stage operations that may span
+days or months before an objective is reached. Recent industry reporting places the global
+median dwell time at 14 days in 2025, with cyber-espionage intrusions found considerably
+later\cite{mandiant2026mtrends}, attributes a large share of intrusions to credential abuse
+and vulnerability exploitation\cite{verizon2025dbir}, and records substantial business
+disruption once a breach occurs\cite{ibm2024costdatabreach}. Such figures do not convey the
+shape of the defense. Individual actions or stages may have been detected or disrupted even
+when the campaign ultimately succeeded, and a campaign that failed may have been stopped by a
+single control acting late. Recording only whether a campaign succeeded therefore hides where
+defensive capability held and where it was insufficient.
 
-In response, organizations deploy layered defense stacks, including Endpoint Detection and Response (EDR), Next-Generation Firewalls (NGFW), Security Information and Event Management (SIEM), Privileged Access Management (PAM), and email security gateways. However, deployment does not imply effectiveness. A defense stack with more products is not necessarily more capable, and a system that fails to stop an entire APT campaign is not necessarily useless. What matters is whether the evaluation can show where the defense worked, where it failed, and which failures should be repaired first.
+Organizations respond by deploying layered stacks, but deployment is not capability. The
+components of such a stack emit evidence with different meanings: one removes a precondition
+so that an action cannot be attempted, another interrupts the action while it runs, a third
+records it without preventing it, and a fourth does not observe it. Counting products, or
+counting alerts, flattens these distinctions. An evaluation useful to a defender must instead
+be comparable across heterogeneous stacks, aware of where in a campaign an outcome occurred,
+and traceable from an aggregate figure back to a control that can be repaired.
 
-Existing evaluation approaches provide useful pieces of this picture, but they do not directly produce repair-oriented, stage-aware defense capability scores. Attack knowledge bases such as MITRE ATT\&CK provide a common language for describing attacker behavior, and ATT\&CK Evaluations report product responses at the step level\cite{mitreAttackEvaluations}. Vulnerability scoring and attack-graph methods analyze severity, reachability, or path risk\cite{mell2007common,wang2007measuring,erola2022system}. These approaches are valuable, but they usually stop at attack techniques, product observations, vulnerabilities, or attack paths. They do not directly answer which victim-side control point first failed for a missed action, nor how that failure should affect a multi-stage APT defense score.
+Existing approaches supply parts of this picture. ATT\&CK provides a shared vocabulary for
+adversary behavior\cite{mitreAttack} and public product evaluations report responses step by
+step\cite{mitreAttackEvaluations}, yet technique coverage has been shown empirically to be a
+weak proxy for defensive capability\cite{virkud2024endpoint}. Provenance-based detection and
+attack reconstruction recover the causal origin of observed malicious
+activity\cite{jiang2025orthrus,goyal2024rcaid}, and control catalogs relate adversary
+techniques to countermeasures\cite{mitreCTIDMappings,kaloroumakis2021d3fend}. These outputs
+characterize attacker behavior, causal evidence, or candidate countermeasures, but they are
+not designed to provide the stable victim-side control attribution required by our
+repair-oriented scoring task.
 
-This paper starts from a different evaluation unit: an APT action paired with its observed defense result and its first-failed victim-side control point. The motivation is simple. The same ATT\&CK technique may require different repairs in different contexts. A credential-related action, for example, may result from weak password policy, missing multi-factor authentication, exposed remote login, insufficient credential storage protection, or successful phishing. These cases may share an attack label, but they do not point to the same defensive repair. A useful scoring framework should therefore preserve the link between attacker behavior, defense observation, and repairable control failure.
+A second line represents how an intrusion advances. Attack graphs and reachability models
+reason about attack paths and their
+composition\cite{sheyner2002attackgraphs,wang2007measuring}, while severity and system-level
+risk models quantify exposure along a different axis\cite{mell2007common,erola2022system};
+step-level results have also been re-linked into causal chains to recover campaign
+structure\cite{shen2024decoding}. Campaign progress and the control-point domain associated
+with an action nevertheless remain orthogonal dimensions: the same control domain can be
+implicated at multiple phases, while actions within one phase can map to different control
+domains. Collapsing them onto a single axis makes a score harder to act on, not easier.
 
-Building such a framework raises three practical challenges. First, the attribution schema must be stable enough to handle heterogeneous APT actions while remaining useful for repair. Second, the attack-stage dimension must be represented separately from control-point domains, since the same type of defensive failure may appear at different phases of an attack. Third, action-level defense observations must be aggregated according to stage logic rather than by a simple average, while keeping score loss traceable after aggregation.
+A third line aggregates observations into an overall figure. Security-metric and
+evaluation-validity work reports coverage, detection rates, and paired effectiveness
+quantities\cite{iannacone2020quantifiable,zaffarano2015mtd,liu2023defia}, and cautions that
+aggregate security numbers are sensitive to how they are
+constructed\cite{verendel2009quantified,vanderkouwe2019benchmarkingflaws}. A uniform average
+treats action outcomes as interchangeable. Actions within one stage are not: sometimes any
+one of them suffices for the attacker, sometimes all are required, and sometimes they form a
+loose set. An average cannot represent these alternative, conjunctive, and clustered stage
+semantics, and it obscures which actions and stages account for the resulting score loss.
 
-This paper proposes a stage-aware APT defense capability scoring framework based on control-point attribution. The framework first maps each in-scope attack action to the victim-side control point that failed first and is most relevant for repair. It then enriches the attributed action with a canonical attack phase, expected defense product categories, confidence information, and stage aggregation semantics. Finally, it aligns defense observations with benchmark actions, assigns action-level hit values, and aggregates them into playbook-level and multi-dimensional defense scores.
+The three limitations above point to a common missing object: an evaluation unit that keeps
+attacker behavior, a benchmark-side repair reference, and the evaluated system's response
+aligned without conflating them. We therefore pair an in-scope benchmark action with a
+reference primary control-point attribution fixed during benchmark construction, and with the
+outcome observed when a defense system under test is exercised against that action. The
+attribution names one victim-side control point -- a mechanism, configuration, policy, or
+operational process -- and is a benchmark-side reference, assigned under a documented
+procedure before any system is evaluated. The observed outcome, by contrast, records what the
+evaluated system did when the action was exercised. This separation matters because an
+attacker-side technique label does not by itself determine a victim-side repair target:
+actions sharing the same technique label may require different control-point attributions
+depending on their context. Attacker-side and victim-side attribution answer different
+questions, and a framework aimed at repair must preserve the second without discarding the
+first.
+
+Building an evaluation on this unit raises three methodological challenges. First, the
+attribution must remain stable across heterogeneous actions while staying repair-relevant: a
+schema too coarse cannot separate distinct repairs, and one too fine cannot be applied
+consistently. Second, campaign phase and control-point domain must be carried as separate
+dimensions, together with the confidence of each assignment, so that a
+downstream figure can be interpreted rather than merely read. Third, action-level outcomes
+must be aggregated under the semantics that actually hold inside a stage, and the aggregate
+must remain decomposable afterwards.
+
+We address these with a three-step framework. The first step constructs the reference
+attribution for benchmark actions, recording a primary control-point reference together with
+its confidence under the benchmark schema. Secondary annotations, when present, remain
+contextual metadata rather than additional primary scoring targets. The second step enriches
+the attributed action into a scoring-ready record, adding the campaign phase at which the
+action occurs, the defense product categories expected to address the attributed control
+point, and the aggregation semantics governing its stage; phase is carried independently of
+the attribution, so that where an action occurs in the campaign remains separate from which
+control-point domain it is associated with. The third step aligns observations from a system
+under test to benchmark actions, normalizes them onto a common outcome vocabulary of
+\texttt{PREVENTED}, \texttt{BLOCKED}, \texttt{DETECTED}, and \texttt{MISSED}, and aggregates
+actions to stages and stages to playbooks while retaining breakdowns by phase, control-point
+domain, and product category. The current benchmark instance draws on 53 APT playbooks and
+1,796 authoritative raw action occurrences; the benchmark presently defines 1,773 active
+scoring opportunities, and the control-point schema presently comprises nine top-level domains
+and 97 active leaves.
 
 The main contributions of this paper are as follows:
 \begin{itemize}
-    \item We propose a control-point attribution schema for APT defense evaluation, shifting the evaluation unit from ``what the attacker did'' to ``which victim-side control failed first.'' The schema covers 9 top-level domains and 94 leaf-level control points, enabling action-level attribution of defensive failures.
+    \item \textbf{An evaluation representation for repair-oriented APT defense scoring.} We
+    define the evaluation record so that it extends an attacker-side action description by
+    binding to it a reference primary control-point attribution and an observed defense
+    outcome, keeping the benchmark-side attribution separate from the behavior of the system
+    under test. The attack action remains part of the representation; what the representation
+    adds is a repair-oriented victim-side dimension alongside the observed result.
 
-    \item We design a benchmark construction process that connects control-point attribution with stage-aware scoring. It adds canonical phase mapping, expected defense categories, confidence labels, and stage aggregation semantics to produce scoring-ready defense opportunity records.
+    \item \textbf{A scoring-ready, stage-aware benchmark representation.} We describe a
+    construction process that enriches each attributed action with its campaign phase, the
+    expected defense product categories, confidence, and explicit stage
+    aggregation semantics, keeping campaign progress and victim-side control attribution as
+    separate dimensions of one record.
 
-    \item We develop a stage-aware scoring model that separates action-level hit values from stage importance and supports aggregation from actions to stages and playbooks. The model also reports scores by attack phase, control-point domain, and defense product category, making score loss easier to interpret.
-
-    \item We evaluate the framework on 53 APT playbooks containing 1,758 attack actions. The results validate the mathematical behavior of the scoring engine and show that no single product category can independently cover the full APT attack surface, highlighting the need for coordinated defense-in-depth.
+    \item \textbf{A stage-aware aggregation and reporting model.} We separate an action's
+    outcome from the weight of the stage containing it, aggregate outcomes under each stage's
+    recorded OR, AND, or Cluster semantics rather than a uniform average, compose action to
+    stage to playbook scores, and preserve decomposition by action, control point, and phase.
 \end{itemize}
-
